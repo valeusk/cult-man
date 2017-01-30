@@ -1,57 +1,851 @@
+@charset "UTF-8";
 /*
-Error: File to import not found or unreadable: parts/fonts.
-       Load path: C:/openserver/domains/cultura/wp-content/themes/cult-man
-        on line 57 of C:\openserver\domains\cultura\wp-content\themes\cult-man\style.scss
+Theme Name: cult-man
+Theme URI: http://underscores.me/
+Author: ╨Т╨░╨╗╨╡╨╜╤В╨╕╨╜
+Author URI: http://-
+Description: -
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cult-man
+Tags:
 
-52:
-53: /*--------------------------------------------------------------
-54: # Fonts
-55: --------------------------------------------------------------*\/
-56:
-57: @import 'parts/fonts';
-58:
-59: /*--------------------------------------------------------------
-60: # Typography
-61: --------------------------------------------------------------*\/
-62: body,
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 
-Backtrace:
-C:\openserver\domains\cultura\wp-content\themes\cult-man\style.scss:57
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+cult-man is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: parts/fonts.\A        Load path: C:/openserver/domains/cultura/wp-content/themes/cult-man\A         on line 57 of C:\openserver\domains\cultura\wp-content\themes\cult-man\style.scss\A \A 52: \A 53: /*--------------------------------------------------------------\A 54: # Fonts\A 55: --------------------------------------------------------------*/\A 56: \A 57: @import 'parts/fonts';\A 58: \A 59: /*--------------------------------------------------------------\A 60: # Typography\A 61: --------------------------------------------------------------*/\A 62: body,"; }
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Reset
+# Fonts
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/* ------------------Reset CSS
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  word-wrap: break-word; }
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
+
+*,
+*:before,
+*:after {
+  /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
+  /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+  -moz-box-sizing: border-box;
+  /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+  box-sizing: border-box; }
+
+ol,
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ""; }
+
+blockquote,
+q {
+  quotes: "" ""; }
+
+a:focus {
+  outline: 0; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+a img {
+  border: 0;
+  margin: 10px; }
+
+/* =END Reset
+-------------------------------------------------------------- */
+/*------------------- ╨и╨а╨Ш╨д╨в╨л ----------------------*/
+/* font-family: "Exo2Regular"; */
+@font-face {
+  font-family: "Exo2Regular";
+  src: url("fonts/Exo2Regular/Exo2Regular.eot");
+  src: url("fonts/Exo2Regular/Exo2Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2Regular/Exo2Regular.woff") format("woff"), url("fonts/Exo2Regular/Exo2Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2Bold"; */
+@font-face {
+  font-family: "Exo2Bold";
+  src: url("fonts/Exo2Bold/Exo2Bold.eot");
+  src: url("fonts/Exo2Bold/Exo2Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2Bold/Exo2Bold.woff") format("woff"), url("fonts/Exo2Bold/Exo2Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2Light"; */
+@font-face {
+  font-family: "Exo2Light";
+  src: url("fonts/Exo2Light/Exo2Light.eot");
+  src: url("fonts/Exo2Light/Exo2Light.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2Light/Exo2Light.woff") format("woff"), url("fonts/Exo2Light/Exo2Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2BoldItalic"; */
+@font-face {
+  font-family: "Exo2BoldItalic";
+  src: url("fonts/Exo2BoldItalic/Exo2BoldItalic.eot");
+  src: url("fonts/Exo2BoldItalic/Exo2BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2BoldItalic/Exo2BoldItalic.woff") format("woff"), url("fonts/Exo2BoldItalic/Exo2BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2ExtraBold"; */
+@font-face {
+  font-family: "Exo2ExtraBold";
+  src: url("fonts/Exo2ExtraBold/Exo2ExtraBold.eot");
+  src: url("fonts/Exo2ExtraBold/Exo2ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2ExtraBold/Exo2ExtraBold.woff") format("woff"), url("fonts/Exo2ExtraBold/Exo2ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2ExtraBoldItalic"; */
+@font-face {
+  font-family: "Exo2ExtraBoldItalic";
+  src: url("fonts/Exo2ExtraBoldItalic/Exo2ExtraBoldItalic.eot");
+  src: url("fonts/Exo2ExtraBoldItalic/Exo2ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2ExtraBoldItalic/Exo2ExtraBoldItalic.woff") format("woff"), url("fonts/Exo2ExtraBoldItalic/Exo2ExtraBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2ExtraLight"; */
+@font-face {
+  font-family: "Exo2ExtraLight";
+  src: url("fonts/Exo2ExtraLight/Exo2ExtraLight.eot");
+  src: url("fonts/Exo2ExtraLight/Exo2ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2ExtraLight/Exo2ExtraLight.woff") format("woff"), url("fonts/Exo2ExtraLight/Exo2ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2ExtraLightItalic"; */
+@font-face {
+  font-family: "Exo2ExtraLightItalic";
+  src: url("fonts/Exo2ExtraLightItalic/Exo2ExtraLightItalic.eot");
+  src: url("fonts/Exo2ExtraLightItalic/Exo2ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2ExtraLightItalic/Exo2ExtraLightItalic.woff") format("woff"), url("fonts/Exo2ExtraLightItalic/Exo2ExtraLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2Italic"; */
+@font-face {
+  font-family: "Exo2Italic";
+  src: url("fonts/Exo2Italic/Exo2Italic.eot");
+  src: url("fonts/Exo2Italic/Exo2Italic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2Italic/Exo2Italic.woff") format("woff"), url("fonts/Exo2Italic/Exo2Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2BlackItalic"; */
+@font-face {
+  font-family: "Exo2BlackItalic";
+  src: url("fonts/Exo2BlackItalic/Exo2BlackItalic.eot");
+  src: url("fonts/Exo2BlackItalic/Exo2BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2BlackItalic/Exo2BlackItalic.woff") format("woff"), url("fonts/Exo2BlackItalic/Exo2BlackItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2LightItalic"; */
+@font-face {
+  font-family: "Exo2LightItalic";
+  src: url("fonts/Exo2LightItalic/Exo2LightItalic.eot");
+  src: url("fonts/Exo2LightItalic/Exo2LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2LightItalic/Exo2LightItalic.woff") format("woff"), url("fonts/Exo2LightItalic/Exo2LightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2Medium"; */
+@font-face {
+  font-family: "Exo2Medium";
+  src: url("fonts/Exo2Medium/Exo2Medium.eot");
+  src: url("fonts/Exo2Medium/Exo2Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2Medium/Exo2Medium.woff") format("woff"), url("fonts/Exo2Medium/Exo2Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2MediumItalic"; */
+@font-face {
+  font-family: "Exo2MediumItalic";
+  src: url("fonts/Exo2MediumItalic/Exo2MediumItalic.eot");
+  src: url("fonts/Exo2MediumItalic/Exo2MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2MediumItalic/Exo2MediumItalic.woff") format("woff"), url("fonts/Exo2MediumItalic/Exo2MediumItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2SemiBold"; */
+@font-face {
+  font-family: "Exo2SemiBold";
+  src: url("fonts/Exo2SemiBold/Exo2SemiBold.eot");
+  src: url("fonts/Exo2SemiBold/Exo2SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2SemiBold/Exo2SemiBold.woff") format("woff"), url("fonts/Exo2SemiBold/Exo2SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2SemiBoldItalic"; */
+@font-face {
+  font-family: "Exo2SemiBoldItalic";
+  src: url("fonts/Exo2SemiBoldItalic/Exo2SemiBoldItalic.eot");
+  src: url("fonts/Exo2SemiBoldItalic/Exo2SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2SemiBoldItalic/Exo2SemiBoldItalic.woff") format("woff"), url("fonts/ESemiBoldItalic/Exo2SemiBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2Thin"; */
+@font-face {
+  font-family: "Exo2Thin";
+  src: url("fonts/Exo2Thin/Exo2Thin.eot");
+  src: url("fonts/Exo2Thin/Exo2Thin.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2Thin/Exo2Thin.woff") format("woff"), url("fonts/Exo2Thin/Exo2Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Exo2ThinItalic"; */
+@font-face {
+  font-family: "Exo2ThinItalic";
+  src: url("fonts/Exo2ThinItalic/Exo2ThinItalic.eot");
+  src: url("fonts/Exo2ThinItalic/Exo2ThinItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2ThinItalic/Exo2ThinItalic.woff") format("woff"), url("fonts/Exo2ThinItalic/Exo2ThinItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "OpenSansRegular"; */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "OpenSansItalic"; */
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url("fonts/OpenSansItalic/OpenSansItalic.eot");
+  src: url("fonts/OpenSansItalic/OpenSansItalic.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSansItalic/OpenSansItalic.woff") format("woff"), url("fonts/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "OpenSansBold"; */
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("fonts/OpenSansBold/OpenSansBold.eot");
+  src: url("fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/*---------------- Header -----------------
+------------------------------------------*/
+img.custom-logo {
+  box-shadow: none; }
+
+.headgrad {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+37,7c78ce+100&1+55,0.83+81,0+100 */
+  background: -moz-linear-gradient(top, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007c78ce',GradientType=0 );
+  /* IE6-9 */ }
+
+.headgrad0 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+54,7c78ce+91,6e2be9+97,6e2be9+100&1+40,0.83+76,0+100 */
+  background: -moz-linear-gradient(top, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006e2be9',GradientType=0 );
+  /* IE6-9 */ }
+
+.site-title {
+  font-family: "Exo2Bold";
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.site-title a, h1.site-title a {
+  color: #fff;
+  letter-spacing: 0.1em; }
+  .site-title a:hover, h1.site-title a:hover {
+    color: #fff; }
+
+.site-description {
+  text-align: center;
+  color: #fff;
+  margin: -40px 0px 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.site-branding {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(45, 68, 195, 0.21); }
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around; }
+
+/*-----------------------------------------
+LOGO
+------------------------------------------*/
+.custom-logo {
+  margin: 10px; }
+
+/*--------------------------------------------------------------
+# typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  color: #333;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 16px;
+  line-height: 1.4; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  line-height: 1.3em;
+  margin-bottom: 5px;
+  font-family: "OpenSansBold"; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 28px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 14px; }
+
+.box-shadow-custom {
+  box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
+
+/*╨Ч╨░╨┐╨╗╨░╤В╨║╨░ ╨┐╨╛╨╝╨╡╨╜╤П╤В╤М ╨╜╨░ ╤Б╨░╨╝╨╛╨╝ ╨▓╨╡╤А╤Е╨╜╨╡╨╝ ╤Г╤А╨╛╨▓╨╜╨╡ ╨░╨▒╤Б╤В╤А╨░╨║╤Ж╨╕╨╕ ╨┐╨╛╤В╨╛╨╝ ╤Г╨▒╤А╨░╤В╤М ╨╖╨┤╨╡╤Б╤М*/
+h2.entry-title {
+  font-size: 25px;
+  font-family: "OpenSansBold", sans-serif;
+  margin-bottom: 5px;
+  text-transform: uppercase; }
+  h2.entry-title a {
+    color: #333; }
+    h2.entry-title a:hover {
+      color: #3934b5;
+      transition: all 0.2s ease; }
+
+h1.entry-title {
+  font-size: 25px;
+  font-family: "OpenSansBold", sans-serif;
+  margin-bottom: 5px;
+  /*text-align: center;*/
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #bcbaba;
+  text-transform: uppercase; }
+
+.page-title {
+  border-bottom: 2px solid #bcbaba;
+  margin-bottom: 1.1em;
+  padding-bottom: 0.3em;
+  font-family: "OpenSansBold"; }
+
+p {
+  margin-bottom: 1.5em; }
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+code,
+kbd,
+tt,
+var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+big {
+  font-size: 125%; }
+
+.text__shadow-dark, .contur-txt-dark {
+  text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000; }
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em; }
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa; }
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  border-color: #aaa #bbb #bbb; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px; }
+
+select {
+  border: 1px solid #ccc; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111; }
+
+textarea {
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: royalblue; }
+
+a:visited {
+  color: purple; }
+
+a:hover,
+a:focus,
+a:active {
+  color: midnightblue; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%; }
+
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+
+.main-navigation li {
+  float: left;
+  position: relative; }
+
+.main-navigation a {
+  display: block;
+  text-decoration: none; }
+
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: -999em;
+  z-index: 99999; }
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0; }
+
+.main-navigation ul ul a {
+  width: 200px; }
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto; }
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  left: 100%; }
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none; }
+
+  .main-navigation ul {
+    display: block; } }
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0; }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed; }
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em; }
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block; }
+
+.hentry {
+  margin: 0 0 1.5em; }
+
+.byline,
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%; }
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%; }
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%; }
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%; }
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%; }
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%; }
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%; }
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */
