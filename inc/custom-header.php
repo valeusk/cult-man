@@ -20,8 +20,8 @@ function cult_man_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'cult_man_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 1255,
+		'height'                 => 200,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'cult_man_header_style',
 	) ) );

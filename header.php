@@ -24,7 +24,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cult-man' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+		<div class="site-branding" style="background: url(<?php header_image(); ?>);background-position: center;background-repeat:no-repeat; ">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title text__shadow-dark"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
