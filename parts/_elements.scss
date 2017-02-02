@@ -63,10 +63,12 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
-img {
+img* {
     height: auto;
     /* Make sure images are scaled correctly. */
-    max-width: 100%;
+    //max-width: 100%;
+    width: 100%;
+    height: auto;
     /* Adhere to container width. */
     box-shadow: $box-shadow-all;
 }
