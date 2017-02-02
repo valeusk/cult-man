@@ -1,0 +1,65 @@
+/*-----------------------------------------------
+sidebar
+----------------------------------------------*/
+
+h2.widget-title {
+    font-size: 28px;
+    font-family: $title-font, sans-serif;
+    color: $title-color;
+    border-bottom: 1px solid $title-color;
+    padding-bottom: 8px;
+}
+
+.widget-area {
+    margin-left: 30px;
+
+    ul {
+        margin: 0px;
+    }
+
+    li {
+        list-style: none;
+        padding: 15px 10px;
+        margin: 0;
+        border-bottom: 1px solid $border-color;
+
+        &:first-child {
+            padding-top: 20px;
+        }
+
+        a{
+            color: $menu__text-color;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+
+/*-----------------------------------
+footer sidebar
+------------------------------------*/
+
+.f-sidebar {
+   display: inline-grid;
+    .f-wtitle{
+        border-bottom: 2px solid $border-color;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        ul {
+            margin: 0px;
+        }
+
+
+    }
+
+    li {
+
+      text-align: left;
+    }
+}

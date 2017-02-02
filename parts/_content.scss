@@ -1,0 +1,207 @@
+/*--------------------------------------------------------------
+# content
+--------------------------------------------------------------*/
+
+.content-area {
+    margin-top: 40px;
+}
+
+.entry-meta span {
+    /*color: $title-color;*/
+    font-size: 13px;
+}
+
+.entry-header {
+    margin-bottom: 20px;
+}
+
+.thumbnail-my {
+    margin-bottom: 20px;
+}
+
+.more-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 2px solid $title-color;
+    padding: 4px 20px;
+    border-radius: 3px;
+    //a {
+    //    color: $title-color;
+   // }
+    &:hover {
+        background-color: $title-color;
+        font-family: $title-font;
+        color: #fff;
+        transition: all 0.6s ease;
+    }
+}
+
+a.more-link {
+     color: $title-color;
+    font-family: $title-font;
+}
+
+.entry-footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.site-main article {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/*.sticky {
+	display: block;
+}*/
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+/*.entry-content*/,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.entry-content {
+    margin: 0.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+.my-post  {
+	margin-bottom: 30px;
+
+    background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+    box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53) , -5px -3px 15px -3px rgba(49, 24, 82, 0.5) ;
+    .entry-title {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #333;
+    }
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+
+/*-------Single post navigation--------*/
+.previous, .next  {
+    padding: 10px;
+    margin-bottom: 20px;
+
+    text-align:center;
+    a {
+
+        /*line-height: 40px;*/
+        font-size: 16px;
+        font-family: $title-font;
+        /*background-color: $title-color;*/
+       /* padding: 5px 10px;*/
+        border-radius: 4px;
+        color: #000;
+
+        &:hover {
+            background-color:#fff;
+            color: $title-color;
+            text-decoration: underline;
+            transition: $transitionall;
+        }
+    }
+
+}
+
+
+
+/*-----------------------------------
+# Paginashion
+------------------------------------*/
+
+
+.pagination-line {
+    //border: 2px solid $title-color;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: $title-color;
+    line-height: 2.5em;
+    a {
+        color: #fff;
+    }
+}
+a.page-numbers {
+    font-size: 18px;
+    margin: 2px;
+    padding: 2px 5px;
+    border: 2px solid $title-color;
+    &:hover {
+        /*margin-top: 0px;
+    margin-bottom: 0px;*/
+        padding-top: 6px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        /*padding: 2px 5px;*/
+        border: 2px solid #fff;
+        border-radius: 3px;
+        transition: $transitionall;
+    }
+}
+
+.page-numbers.dots {
+    color: #fff;
+    font-size: 22px;
+
+}
+
+span.page-numbers.current {
+    color: #fff;
+    font-family: $title-font;
+    font-size: 22px;
+    padding: 2px 5px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}

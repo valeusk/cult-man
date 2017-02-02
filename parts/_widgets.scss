@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# widgets
+--------------------------------------------------------------*/
+
+.widget {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53) , -5px -3px 15px -3px rgba(49, 24, 82, 0.5) ;
+    img {
+        box-shadow:none;
+    }
+}
+
+
+.widget {
+	margin: 0 0 70px;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+.search-form {
+    text-align: center;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid $title-color;
+    margin-bottom: 20px;
+}
+
+/*.search-submit {
+    font-size: 20px;
+}*/
+
+input.search-submit {
+    width: 80%;
+    margin: 5px;
+    font-size: 16px;
+    box-shadow: none;
+    background: #fff;
+    color: $title-color;
+    border: 2px solid $title-color;
+    text-shadow: none;
+    &:hover {
+        color:#fff;
+        background: $title-color ;
+        border: 2px solid $title-color;
+        transition: $transitionall;
+        box-shadow: none;
+    }
+
+}
+
+input.search-field {
+    width: 76%;
+    margin: 5px;
+    border: 2px solid $title-color;
+}
