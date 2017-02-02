@@ -69,16 +69,14 @@ html {
   /* Keeps page centered in all browsers regardless of content height */
   -webkit-text-size-adjust: 100%;
   /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-  -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
 
 *,
 *:before,
 *:after {
   /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-  -webkit-box-sizing: border-box;
   /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
-  -moz-box-sizing: border-box;
   /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
   box-sizing: border-box; }
 
@@ -267,24 +265,22 @@ img.custom-logo {
 
 .headgrad {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+37,7c78ce+100&1+55,0.83+81,0+100 */
-  background: -moz-linear-gradient(top, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, white 16%, #eff1f9 37%, #ceceed 55%, rgba(159, 156, 219, 0.83) 81%, rgba(124, 120, 206, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007c78ce',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007c78ce',GradientType=0 )
   /* IE6-9 */ }
 
 .headgrad0 {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+54,7c78ce+91,6e2be9+97,6e2be9+100&1+40,0.83+76,0+100 */
-  background: -moz-linear-gradient(top, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, white 16%, #f5f6fb 40%, rgba(239, 241, 249, 0.93) 54%, rgba(171, 169, 223, 0.83) 76%, rgba(124, 120, 206, 0.31) 91%, rgba(110, 43, 233, 0.1) 97%, rgba(110, 43, 233, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006e2be9',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006e2be9',GradientType=0 )
   /* IE6-9 */ }
 
 .site-title {
@@ -309,21 +305,47 @@ img.custom-logo {
 
 .site-branding {
   margin-top: 52px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 30px;
   padding-bottom: 20px;
   background-color: rgba(45, 68, 195, 0.76);
   height: 200px; }
 
 .site-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-around; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
 
 /*-----------------------------------------
 LOGO
@@ -386,7 +408,8 @@ h2.entry-title {
     color: #333; }
     h2.entry-title a:hover {
       color: #3934b5;
-      transition: all 0.2s ease; }
+      -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease; }
 
 h1.entry-title {
   font-size: 25px;
@@ -405,7 +428,8 @@ h1.entry-title {
   font-family: "OpenSansBold"; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  font-family: "OpenSansRegular"; }
 
 dfn,
 cite,
@@ -550,8 +574,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #2c4eb5;
-  transition: all 0.2s ease; }
+  color: #2c4eb5; }
 
 a:focus {
   outline: thin dotted; }
@@ -565,8 +588,13 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
   clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   width: 100%;
   border-top: 1px solid #bcbaba;
   border-bottom: 1px solid #bcbaba;
@@ -588,16 +616,14 @@ a:active {
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  text-transform: uppercase;
-  /*margin-right: 10px;
-  margin-left: 10px;*/ }
-  .main-navigation li:hover {
-    background: #2633d6; }
+  text-transform: uppercase; }
 
 .menu-item {
-  padding: 5px 5px;
+  padding: 5px 10px;
   background-color: #fff;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  -webkit-transition: background 0.5s ease;
+          transition: background 0.5s ease; }
   .menu-item a {
     color: #5b5b5b;
     font-family: "Exo2Bold";
@@ -605,7 +631,8 @@ a:active {
   .menu-item:hover {
     background: #2633d6;
     padding: 5px 10px;
-    transition: all 0.2s ease; }
+    -webkit-transition: background 0.5s ease;
+            transition: background 0.5s ease; }
     .menu-item:hover a {
       color: #fff; }
 
@@ -617,24 +644,36 @@ a:active {
     font-family: "Exo2Bold"; }
 
 .sub-menu {
-  background-color: #fff;
-  border-radius: 0px 0px 5px 5px;
-  border-top: 1px solid  #fff; }
+  background-color: #fff; }
   .sub-menu .menu-item {
-    padding: 5px; }
+    padding: 5px;
+    border: 1px solid #bcbaba; }
     .sub-menu .menu-item a {
       color: #5b5b5b; }
     .sub-menu .menu-item:hover {
-      color: #d84f4f;
-      border-radius: 4px;
-      transition: all 0.2s ease; }
+      border: 1px solid #2633d6;
+      -webkit-transition: border 0.4s ease;
+              transition: border 0.4s ease; }
       .sub-menu .menu-item:hover a {
         color: #fff; }
+  .sub-menu .current-menu-item {
+    border: 1px solid #f81313;
+    -webkit-transition: border 0.4s ease;
+            transition: border 0.4s ease; }
+    .sub-menu .current-menu-item a {
+      color: #fff; }
 
 .main-navigation ul ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 7px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -651,7 +690,9 @@ a:active {
 .main-navigation ul ul li {
   width: 100%; }
   .main-navigation ul ul li:hover {
-    background: #2633d6; }
+    background: #2633d6;
+    -webkit-transition: background 0.5s ease;
+            transition: background 0.5s ease; }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -675,7 +716,8 @@ button.menu-toggle {
   margin: 0 auto; }
   button.menu-toggle:hover {
     color: #3934b5;
-    transition: all 0.3s ease; }
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
@@ -730,7 +772,7 @@ button.menu-toggle {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000;
+  z-index: 100000
   /* Above WP toolbar. */ }
 
 /* Do not show the outline on the skip link target. */
@@ -831,8 +873,7 @@ footer sidebar
 .widget {
   background-color: #fff;
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
+  border-radius: 5px; }
   .widget img {
     box-shadow: none; }
 
@@ -867,7 +908,8 @@ input.search-submit {
     color: #fff;
     background: #3934b5;
     border: 2px solid #3934b5;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
     box-shadow: none; }
 
 input.search-field {
@@ -904,9 +946,6 @@ footer
 /*--------------------------------------------------------------
 # content
 --------------------------------------------------------------*/
-.content-area {
-  margin-top: 40px; }
-
 .entry-meta span {
   /*color: $title-color;*/
   font-size: 13px; }
@@ -916,6 +955,9 @@ footer
 
 .thumbnail-my {
   margin-bottom: 20px; }
+  .thumbnail-my img {
+    width: 100%;
+    height: auto; }
 
 .more-link {
   text-transform: uppercase;
@@ -927,7 +969,8 @@ footer
     background-color: #3934b5;
     font-family: "OpenSansBold";
     color: #fff;
-    transition: all 0.6s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
 
 a.more-link {
   color: #3934b5;
@@ -940,6 +983,13 @@ a.more-link {
 .site-main article {
   border-bottom: 1px solid #dbdbdb;
   margin-bottom: 20px; }
+
+.content-area .container {
+  background: #fff;
+  padding-top: 40px; }
+
+.site-main {
+  padding: 0px 10px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1005,7 +1055,8 @@ a.more-link {
       background-color: #fff;
       color: #3934b5;
       text-decoration: underline;
-      transition: all 0.2s ease; }
+      -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease; }
 
 /*-----------------------------------
 # Paginashion
@@ -1035,7 +1086,8 @@ margin-bottom: 0px;*/
     /*padding: 2px 5px;*/
     border: 2px solid #fff;
     border-radius: 3px;
-    transition: all 0.2s ease; }
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease; }
 
 .page-numbers.dots {
   color: #fff;
@@ -1156,7 +1208,8 @@ object {
       background-color: #3934b5;
       border: 2px solid #fff;
       border-radius: 4px;
-      transition: all 0.2s ease; }
+      -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease; }
       .main-navigation li:hover a {
         color: #fff; }
     .main-navigation li:last-child {
@@ -1187,7 +1240,8 @@ object {
       color: #333; }
       h2.entry-title a:hover {
         color: #3934b5;
-        transition: all 0.2s ease; }
+        -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease; }
 
   h1.entry-title {
     font-size: 22px;
@@ -1201,11 +1255,25 @@ object {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .site-branding {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     margin: 30px 0px 10px; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
@@ -1218,7 +1286,8 @@ object {
       color: #333; }
       h2.entry-title a:hover {
         color: #3934b5;
-        transition: all 0.2s ease; }
+        -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease; }
 
   h1.entry-title {
     font-size: 16px;

@@ -21,7 +21,6 @@ a:hover,
 a:focus,
 a:active {
 	color: $link__color-hover;
-    transition: $transitionall;
 }
 
 a:focus {
@@ -61,32 +60,29 @@ a:active {
 }
 
 .main-navigation li {
-	text-align: center;
-	position: relative;
+    text-align: center;
+    position: relative;
     display: inline-block;
     margin: 0 auto;
     text-transform: uppercase;
     &:hover {
-        //background:  #2633d6;
     }
-    /*margin-right: 10px;
-    margin-left: 10px;*/
-    }
+}
 
 .menu-item {
     padding: 5px 10px;
     background-color: #fff;
     padding: 5px 10px;
+    transition: background 0.5s ease;
     a {
     color: $menu__text-color;
     font-family: $menu__font;
     text-decoration: none;
     }
-    transition: all 0.5s ease;
     &:hover{
         background: #2633d6;
         padding: 5px 10px;
-        transition: all 0.5s ease;
+        transition: background 0.5s ease;
         a {
             color: #fff;
         }
@@ -105,25 +101,24 @@ a:active {
 
 .sub-menu {
     background-color: #fff;
-    //border-top:  1px solid  #fff;
     .menu-item {
         padding: 5px;
-        transition: all 0.5s ease;
+        border: 1px solid $border-color;
         a {
             color: $menu__text-color;
         }
         &:hover {
             border: 1px solid #2633d6;
-            //border-radius: 4px;
-            transition: all 0.5s ease;
+            transition: border 0.4s ease;
             a {
                 color: #fff;
             }
         }
-        border: 1px solid $border-color;
+
     }
     .current-menu-item {
         border: 1px solid $menu__curent-item-color;
+        transition: border 0.4s ease;
         a {
             color: #fff;
         }
@@ -157,6 +152,7 @@ a:active {
     width: 100%;
     &:hover {
         background: #2633d6;
+        transition: background 0.5s ease;
     }
 }
 
