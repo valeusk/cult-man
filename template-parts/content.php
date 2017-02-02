@@ -26,6 +26,17 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
+	<div class="thumbnail-my">
+    <?php if ( is_single() ) : ;
+
+                    else : the_post_thumbnail('full');
+
+                endif;
+                ?>
+
+</div>
+<!-- thumbnail-my -->
+
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
