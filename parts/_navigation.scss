@@ -67,14 +67,14 @@ a:active {
     margin: 0 auto;
     text-transform: uppercase;
     &:hover {
-        background:  #2633d6;
+        //background:  #2633d6;
     }
     /*margin-right: 10px;
     margin-left: 10px;*/
     }
 
 .menu-item {
-    padding: 5px 5px;
+    padding: 5px 10px;
     background-color: #fff;
     padding: 5px 10px;
     a {
@@ -82,11 +82,11 @@ a:active {
     font-family: $menu__font;
     text-decoration: none;
     }
-
+    transition: all 0.5s ease;
     &:hover{
         background: #2633d6;
         padding: 5px 10px;
-        transition: $transitionall;
+        transition: all 0.5s ease;
         a {
             color: #fff;
         }
@@ -105,35 +105,43 @@ a:active {
 
 .sub-menu {
     background-color: #fff;
-    border-radius: 0px 0px 5px 5px;
-    border-top:  1px solid  #fff;
-        .menu-item  {
-            padding: 5px;
+    //border-top:  1px solid  #fff;
+    .menu-item {
+        padding: 5px;
+        transition: all 0.5s ease;
+        a {
+            color: $menu__text-color;
+        }
+        &:hover {
+            border: 1px solid #2633d6;
+            //border-radius: 4px;
+            transition: all 0.5s ease;
             a {
-                color: $menu__text-color;
-            }
-            &:hover {
-            color: #d84f4f;
-            border-radius: 4px;
-            transition: $transitionall;
-                a {
-                    color: #fff;
-                }
+                color: #fff;
             }
         }
-
+        border: 1px solid $border-color;
+    }
+    .current-menu-item {
+        border: 1px solid $menu__curent-item-color;
+        a {
+            color: #fff;
+        }
+    }
 }
 
 .main-navigation ul ul {
 	display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 7px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
-	//z-index: 99999;
+    //transition: all 0.8s ease;
+    //border-radius: 0px 0px 5px 5px;
+    //z-index: 99999;
 }
 
 .main-navigation ul ul ul {
