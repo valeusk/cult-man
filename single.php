@@ -10,9 +10,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="row">
+                <main id="main" class="site-main" role="main">
 
-		<?php
+                    <?php
 		while ( have_posts() ) : the_post();
 
 			get_template_part( 'template-parts/content', get_post_format() );
@@ -27,9 +30,17 @@ get_header(); ?>
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+                </main>
+                <!-- #main -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- col-lg-12 -->
+    </div>
+    <!-- container bootstrap -->
+</div>
+<!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

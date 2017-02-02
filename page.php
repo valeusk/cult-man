@@ -14,11 +14,12 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
     <div class="container">
-            <main id="main" class="site-main" role="main">
-
-                <?php
+        <div class="col-lg-12">
+            <div class="row">
+                <main id="main" class="site-main" role="main">
+                    <?php
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' );
@@ -30,10 +31,13 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
-
-            </main>
-            <!-- #main -->
+                </main>
+                <!-- #main -->
             </div>
+            <!-- row -->
+        </div>
+        <!-- col-lg-12 -->
+    </div>
     <!-- container -->
 </div>
 <!-- #primary -->

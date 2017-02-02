@@ -14,19 +14,22 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-	<div class="container">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+    <div class="container">
+        <div class="col-lg-12">
 
-		<?php
+            <div class="row">
+                <main id="main" class="site-main" role="main">
+
+                    <?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+                        <header>
+                            <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                        </header>
 
-			<?php
+                        <?php
 			endif;
 
 			/* Start the Loop */
@@ -49,10 +52,17 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
-		</div> <!-- container -->
-	</div><!-- #primary -->
+                </main>
+                <!-- #main -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- col-lg-12 -->
+    </div>
+    <!-- container -->
+</div>
+<!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
