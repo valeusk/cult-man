@@ -105,12 +105,21 @@ add_action( 'widgets_init', 'cult_man_widgets_init' );
  * Enqueue scripts and styles.
  */
 function cult_man_scripts() {
-	wp_enqueue_style( 'cult-man-style', get_stylesheet_uri() );
+
+    wp_enqueue_style( 'cult-man-style', get_stylesheet_uri() );
+
+    wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/libs/owlcarousel/assets/owl.carousel.min.css');
+
+    wp_enqueue_style( 'owl-look', get_template_directory_uri().'/libs/owlcarousel/assets/owl.theme.default.min.css');
 
     wp_register_style( 'fontawesome', get_template_directory_uri().'/libs/font-awesome/css/font-awesome.min.css' );
     wp_enqueue_style ('fontawesome');
 
-	wp_enqueue_script( 'cult-man-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/libs/owlcarousel/owl.carousel.min.js', array('jquery'), '20151215', true );
+
+    wp_enqueue_script( 'my-carousel', get_template_directory_uri() . '/js/my-carousel.js', array('jquery'), '20151215', true );
+
+    wp_enqueue_script( 'cult-man-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'cult-man-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

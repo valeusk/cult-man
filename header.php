@@ -48,7 +48,22 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true"><?php esc_html_e( 'Primary Menu', 'cult-man' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+		</nav>
+		<!-- #site-navigation -->
+<div class="owl-carousel">
+  <?php $args = array( 'category'=> '27','posts_per_page' => 10);
+$lastposts = get_posts( $args );
+foreach( $lastposts as $post ){ setup_postdata($post);?>
+	<div class="">
+    <div class="">
+        <?php the_post_thumbnail('thumbnail'); ?>
+    </div>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+</div>
+	<?php
+	}
+ wp_reset_postdata(); ?>
+</div> <!-- carousel -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
