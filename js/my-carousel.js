@@ -3,12 +3,15 @@ jQuery(document).ready(function($){
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    //center:true,
+    //margin:10,
     responsiveClass:true,
-    responsive:{
+    autoWidth:true,
+        responsive:{
         0:{
             items:1,
-            nav:true
+            nav:true,
+
         },
         600:{
             items:3,
@@ -17,7 +20,8 @@ $(document).ready(function(){
         1000:{
             items:5,
             nav:true,
-            loop:false
+            loop:false,
+            height:400
         }
     }
 })
