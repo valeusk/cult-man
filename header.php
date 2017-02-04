@@ -51,15 +51,26 @@
 		</nav>
 		<!-- #site-navigation -->
 <div class="owl-carousel">
-  <?php $args = array( 'category'=> '27','posts_per_page' => 10);
+  <?php $args = array( 'posts_per_page' => 10, 'post_type' => 'events');
 $lastposts = get_posts( $args );
 foreach( $lastposts as $post ){ setup_postdata($post);?>
-	<div class="">
-    <div class="">
-        <?php the_post_thumbnail('thumbnail'); ?>
-    </div>
-    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-</div>
+
+
+<?php
+$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->id), 'full', false, '' );
+?>
+
+<div class="slider__item" style="background: url(<?php echo $src[0]; ?> ) !important;background-size:(auto,auto)!important;background-position: center!important;">
+
+    <div class="slider__item-date text__shadow-dark">
+        <h4><?php echo (get_post_meta($post->ID, 'Дата', true)); ?></h4>
+    </div> <!-- slider__item-date -->
+    <div class="slider__item-time text__shadow-dark">
+        <h4><?php echo (get_post_meta($post->ID, 'Время', true)); ?></h4>
+    </div> <!-- slider__item-time -->
+    <div class="slider__item-title text__shadow-dark">
+        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4></div>
+</div> <!-- slider-item -->
 	<?php
 	}
  wp_reset_postdata(); ?>
