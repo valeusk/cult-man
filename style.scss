@@ -232,3 +232,31 @@ object {
 	display: block;
 }
 
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 300px;
+    min-width: 500px;
+    max-width: 500px;
+    &-date, &-time {
+        h4 {
+            background: rgba(32, 46, 105, 0.58);
+            text-align: center;
+            color: #fff;
+            font-family: $site__title-font;
+        }
+    }
+    &-title {
+        h4  {
+            text-align: center;
+            background: rgba(32, 46, 105, 0.44);
+            font-family: $site__title-font;
+        }
+        a {
+            color: #fff;
+        }
+    }
+}
+
