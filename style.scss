@@ -235,28 +235,73 @@ object {
 .slider__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 1000px;
+    height: 700px;
     width: auto;
-    height: 300px;
-    min-width: 500px;
-    max-width: 500px;
-    &-date, &-time {
-        h4 {
-            background: rgba(32, 46, 105, 0.58);
+    &-entry {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &-title {
+            padding:0 40px;
             text-align: center;
-            color: #fff;
-            font-family: $site__title-font;
+            a {
+                color: #fff;
+                font-family: $title-font;
+                font-size: 40px;
+
+            }
         }
-    }
-    &-title {
-        h4  {
-            text-align: center;
-            background: rgba(32, 46, 105, 0.44);
-            font-family: $site__title-font;
-        }
-        a {
-            color: #fff;
+        &-meta {
+            //height: 100%;
+            display: flex;
+            justify-content: center;
+            &-date,
+            &-time {
+                padding: 0px 20px;
+                p {
+                    background: rgba(15, 36, 196, 0.87);
+                    padding: 5px 20px;
+                    border-radius: 6px;
+                    font-size: 30px;
+                    text-align: center;
+                    color: #fff;
+                    font-family: $title-font;
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }
 
+.owl-nav-proto {
+    background: rgba(24, 32, 47, 0.58);
+    width: 30px;
+    height: 70px;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    i {
+        padding: 5px;
+    }
+}
+
+.owl-prev {
+    @extend .owl-nav-proto;
+    border-radius: 0% 50% 50% 0%;
+    text-align: left;
+   }
+
+.owl-next {
+    @extend .owl-nav-proto;
+    right: 0;
+    border-radius: 50% 0% 0% 50%;
+    text-align: right;
+}

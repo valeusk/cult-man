@@ -3,26 +3,31 @@ jQuery(document).ready(function($){
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
     loop:true,
-    //center:true,
-    //margin:10,
+    center:true,
+    autoplay:true,
     responsiveClass:true,
-    autoWidth:true,
+        nav:true,
+        navText: ['<i class="fa fa-angle-double-left" aria-hidden="true"></i>','<i class="fa fa-angle-double-right" aria-hidden="true"></i>'],
+        smartSpeed: 1000,
+        navSpeed:1000,
         responsive:{
         0:{
+            loop:true,
             items:1,
-            nav:true,
+            //nav:true,
 
         },
         600:{
-            items:3,
-            nav:false
+            items:1,
+            nav:true,
+            loop:true
+           // nav:false
         },
         1000:{
-            items:5,
+            items:1,
             nav:true,
-            loop:false,
-            height:400
-        }
+            loop:true
+            }
     }
 })
 });
