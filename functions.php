@@ -25,7 +25,10 @@ function cult_man_setup() {
 	load_theme_textdomain( 'cult-man', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+
+    add_theme_support( 'custom-logo' );
+
+    add_theme_support( 'automatic-feed-links' );
 
 	/*
 	 * Let WordPress manage the document title.

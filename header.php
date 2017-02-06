@@ -36,6 +36,11 @@
 		</nav>
 		<!-- #site-navigation -->
 		<div class="site-branding" style="">
+
+			<div  class="container-fluid">
+			<?php echo get_custom_logo(); ?>
+			</div><!-- container  -->
+
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title text__shadow-dark"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
