@@ -29,7 +29,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cult-man' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding" style="background: url(<?php header_image(); ?>);background-position: center;background-repeat:no-repeat; ">
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true"><?php esc_html_e( 'Primary Menu', 'cult-man' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav>
+		<!-- #site-navigation -->
+		<div class="site-branding" style="">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title text__shadow-dark"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -43,27 +49,54 @@
 				<p class="site-description text__shadow-dark"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-		</div><!-- .site-branding -->
+</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true"><?php esc_html_e( 'Primary Menu', 'cult-man' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav>
-		<!-- #site-navigation -->
 <div class="owl-carousel">
-  <?php $args = array( 'category'=> '27','posts_per_page' => 10);
-$lastposts = get_posts( $args );
-foreach( $lastposts as $post ){ setup_postdata($post);?>
-	<div class="">
-    <div class="">
-        <?php the_post_thumbnail('thumbnail'); ?>
-    </div>
-    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-</div>
-	<?php
-	}
- wp_reset_postdata(); ?>
+      <?php $args = array( 'posts_per_page' => 10, 'post_type' => 'events');
+    $lastposts = get_posts( $args );
+    foreach( $lastposts as $post ){ setup_postdata($post);?>
+
+    <?php
+    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->id), 'full', false, '' );
+    ?>
+
+        <div class="slider__item" style="background: url(<?php echo $src[0]; ?> ) !important;background-size:cover!important;background-position: center!important;">
+
+            <div class="slider__item-entry">
+                <!-- slider__item-time -->
+                <div class="slider__item-entry-title text__shadow-dark">
+                    <p>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </p>
+                </div>
+                <div class="slider__item-entry-meta">
+                    <div class="slider__item-entry-meta-date text__shadow-dark">
+                        <?php $date = get_post_meta($post->ID, 'Дата', true);
+                        if (empty ($date)) {
+                        echo (''); }
+                        else {
+                        echo ('<p><span><i class="fa fa-calendar"aria-hidden="true"></i></span>'.'  '.(get_post_meta($post->ID, 'Дата', true)).'</p>');}?>
+                    </div>
+                    <!-- slider__item-date -->
+                    <div class="slider__item-entry-meta-time text__shadow-dark">
+                        <?php $time = get_post_meta($post->ID, 'Время', true);
+                        if (empty ($time)) {
+                        echo (''); }
+                        else {
+                        echo ('<p><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>'.'  '.(get_post_meta($post->ID, 'Время', true)).'</p>');}?>
+                    </div>
+                </div>
+                <!-- slider__item-meta -->
+            </div>
+            <!-- slider__item-entry -->
+        </div>
+        <!-- slider-item -->
+        <?php
+        }
+     wp_reset_postdata(); ?>
 </div> <!-- carousel -->
-	</header><!-- #masthead -->
+            </header><!-- #masthead -->
 
 	<div id="content" class="site-content">
