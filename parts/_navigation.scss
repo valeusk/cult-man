@@ -41,11 +41,12 @@ a:active {
     justify-content: space-around;
 	width: 100%;
     border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #fff;
     z-index: 20;
-    background-color: $menu__background-color;
+    background-color: rgba(18, 30, 80, 0.79);
     position: fixed;
     top: 0;
+
 }
 
 /*липкое меню*/
@@ -71,7 +72,7 @@ a:active {
 
 .menu-item {
     padding: 5px 10px;
-    background-color: #fff;
+    background-color: transparent;
     padding: 5px 10px;
     transition: background 0.5s ease;
     a {
@@ -80,11 +81,11 @@ a:active {
     text-decoration: none;
     }
     &:hover{
-        background: #2633d6;
+        background: #fff;
         padding: 5px 10px;
         transition: background 0.5s ease;
         a {
-            color: #fff;
+        color: $sub-menu__text-color;
         }
     }
 }
@@ -95,25 +96,40 @@ a:active {
     a{
     color: #fff;
     font-family: $menu__font;
+    text-shadow: none;
     }
 }
 
 
-.sub-menu {
+ul.sub-menu {
     background-color: #fff;
     z-index: 19;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     .menu-item {
+        border-radius: 3px;
         padding: 5px;
-        border: 1px solid $border-color;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid $border-color;
+        //transition: all 0.6s ease;
         a {
-            color: $menu__text-color;
+            color: $sub-menu__text-color;
+            text-shadow: none;
         }
         &:hover {
-            border: 1px solid #2633d6;
-            transition: border 0.4s ease;
+            background: #2633d6;
+            border: 1px solid transparent;
+            transition: border 0.6s ease;
             a {
                 color: #fff;
             }
+
         }
 
     }
@@ -122,6 +138,7 @@ a:active {
         transition: border 0.4s ease;
         a {
             color: #fff;
+            text-shadow: none;
         }
     }
 }
@@ -136,9 +153,6 @@ a:active {
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
-    //transition: all 0.8s ease;
-    //border-radius: 0px 0px 5px 5px;
-    //z-index: 99999;
 }
 
 .main-navigation ul ul ul {
@@ -153,9 +167,8 @@ a:active {
 .main-navigation ul ul li {
     width: 100%;
     z-index: 19;
-    &:hover {
-        background: #2633d6;
-        transition: background 0.5s ease;
+    &:last-child {
+        border-bottom: 1px solid transparent;
     }
 }
 

@@ -53,12 +53,13 @@ $txt__shadow-dark: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #
 $title-font: "OpenSansBold";
 $title-color:/* #3979b5;*/#3934b5;
 $border-color: #bcbaba;
-$transitionall: all 0.2s ease;
+$transitionall: all 0.6s ease;
 $link__color: midnightblue ;
 $link__color-hover: #2c4eb5 ;
 
-$menu__background-color: rgba(255, 255, 255, 1);
-$menu__text-color: #5b5b5b;
+$menu__background-color: rgba(18, 30, 80, 0.48);
+$menu__text-color: #fff;
+$sub-menu__text-color: #5b5b5b;
 $menu__font:"Exo2Bold";
 $menu__curent-item-color: #f81313;
 $border-color: #bcbaba;
@@ -239,7 +240,7 @@ object {
     height: 700px;
     width: auto;
     &-entry {
-        margin-top: 200px;
+        margin-top: 180px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -252,7 +253,11 @@ object {
                 color: #fff;
                 font-family: $title-font;
                 font-size: 40px;
-
+                transition: $transitionall;
+                text-transform: uppercase;
+                &:hover {
+                @extend .contur-text-light;
+                }
             }
         }
         &-meta {
@@ -263,14 +268,12 @@ object {
             &-time {
                 padding: 0px 20px;
                 p {
-                    background: rgba(15, 36, 196, 0.87);
+                    @extend .button-proto;
                     padding: 5px 20px;
                     border-radius: 6px;
-                    font-size: 30px;
+                    font-size: 22px;
                     text-align: center;
-                    color: #fff;
-                    font-family: $title-font;
-                    text-transform: uppercase;
+                    font-family: $site__title-font;
                 }
             }
         }
@@ -278,16 +281,17 @@ object {
 }
 
 .owl-nav-proto {
-    background: rgba(24, 32, 47, 0.58);
+    //background: rgba(24, 32, 47, 0.58);
     width: 30px;
     height: 70px;
     font-size: 30px;
-    color: #fff;
+    //color: #fff;
     position: absolute;
     top: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @extend .button-proto;
     i {
         padding: 5px;
     }
@@ -304,4 +308,36 @@ object {
     right: 0;
     border-radius: 50% 0% 0% 50%;
     text-align: right;
+}
+
+#downclick {
+    position: absolute;
+    top: 0;
+    margin-top: 630px;
+    z-index: 18;
+    left: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    @extend .button-proto;
+}
+
+.button-proto {
+    border: 2px solid #fff;
+    background: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background 0.5s ease;
+    &:hover {
+        background: #1928AD;
+    }
+}
+
+.contur-text-light {
+text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #ffffff;
+transition: all 0.8s ease;
 }
