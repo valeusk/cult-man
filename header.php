@@ -30,7 +30,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation " role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true"><?php esc_html_e( 'Primary Menu', 'cult-man' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
@@ -103,5 +103,18 @@
      wp_reset_postdata(); ?>
 </div> <!-- carousel -->
             </header><!-- #masthead -->
-
+<button id="downclick"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+<script>
+  downclick.addEventListener('click', function () {
+    animatedScrollTo(
+        document.body, // element to scroll with (most of times you want to scroll with whole <body>)
+        700, // target scrollY (0 means top of the page)
+        800, // duration in ms
+        function() { // callback function that runs after the animation (optional)
+          console.log('done!')
+        }
+    );
+});
+</script>
+</button>
 	<div id="content" class="site-content">

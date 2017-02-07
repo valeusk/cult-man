@@ -122,6 +122,8 @@ function cult_man_scripts() {
 
     wp_enqueue_script( 'my-carousel', get_template_directory_uri() . '/js/my-carousel.js', array('jquery'), '20151215', true );
 
+    wp_enqueue_script( 'animated-scrollto', get_template_directory_uri() . '/js/animatedScrollTo.js', array('jquery'), '20151215', true );
+
     wp_enqueue_script( 'cult-man-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'cult-man-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
