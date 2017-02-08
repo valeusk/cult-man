@@ -84,9 +84,12 @@ h1.entry-title {
 
 .page-title {
     border-bottom: 2px solid $border-color;
+    padding-left: 20px;
     margin-bottom: 1.1em;
-    padding-bottom: 0.3em;
-    font-family: $title-font;
+    padding-bottom: 0.1em;
+    font-family: "OpenSansRegular";
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
 

@@ -165,3 +165,113 @@ require get_template_directory() . '/inc/jetpack.php';
 //taxonomi & custom types
 require get_template_directory() . '/events.php';
 
+class eventsWidget extends WP_Widget {
+
+	/*
+	 * создание виджета
+	 */
+	function __construct() {
+		parent::__construct(
+			'events_widget',
+			'События', // заголовок виджета
+			array( 'description' => 'Позволяет вывести  события.' ) // описание
+		);
+	}
+
+	/*
+	 * фронтэнд виджета
+	 */
+	public function widget( $args, $instance ) {
+		$title = apply_filters( 'widget_title', $instance['title'] ); // к заголовку применяем фильтр (необязательно)
+		$posts_per_page = $instance['posts_per_page'];
+
+		echo $args['before_widget'];
+
+		if ( ! empty( $title ) )
+			echo $args['before_title'] . $title . $args['after_title'];
+        echo('<span class="event__widget-title">'.'Анонсы'.'</span>');
+		$q = new WP_Query('post_type=events',"posts_per_page=$posts_per_page");
+		if( $q->have_posts() ):
+			?><ul><?php
+			while( $q->have_posts() ): $q->the_post();
+				?>
+<li>
+    <div class="widget__event">
+    <div class="widget__event-meta">
+        <div class="widget__event-meta-time">
+        <a href="<?php the_permalink(); ?>"><?php
+                        $date = get_post_meta(get_the_ID(), 'Время', true);
+                        if (empty ($date)) {
+                        echo (''); }
+                        else {
+                        echo ('&nbsp;'.(get_post_meta(get_the_ID(), 'Время', true)).'&nbsp;');}?>
+                        </a>
+        </div>
+        <div class="widget__event-meta-date">
+                        <a href="<?php the_permalink(); ?>">
+                        <?php
+                        $date = get_post_meta(get_the_ID(), 'Дата', true);
+                        if (empty ($date)) {
+                        echo (''); }
+                        else {
+                        echo ('&nbsp;'.(get_post_meta(get_the_ID(), 'Дата', true)).'&nbsp;');}?>
+                        </a>
+    </div>
+    </div>
+    <div class="widget__event-title">
+        <a href="<?php the_permalink(); ?>">
+            <?php the_title() ?>
+        </a>
+    </div>
+    </div>
+</li>
+
+
+            <?php endwhile;?>
+			</ul><?php
+		endif;
+		wp_reset_postdata();
+
+		echo $args['after_widget'];
+	}
+
+	/*
+	 * бэкэнд виджета
+	 */
+	public function form( $instance ) {
+		if ( isset( $instance[ 'title' ] ) ) {
+			$title = $instance[ 'title' ];
+		}
+		if ( isset( $instance[ 'posts_per_page' ] ) ) {
+			$posts_per_page = $instance[ 'posts_per_page' ];
+		}
+		?>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>">Заголовок</label>
+			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+		</p>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'posts_per_page' ); ?>">Количество постов:</label>
+			<input id="<?php echo $this->get_field_id( 'posts_per_page' ); ?>" name="<?php echo $this->get_field_name( 'posts_per_page' ); ?>" type="text" value="<?php echo ($posts_per_page) ? esc_attr( $posts_per_page ) : '5'; ?>" size="3" />
+		</p>
+		<?php
+	}
+
+	/*
+	 * сохранение настроек виджета
+	 */
+	public function update( $new_instance, $old_instance ) {
+		$instance = array();
+		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+		$instance['posts_per_page'] = ( is_numeric( $new_instance['posts_per_page'] ) ) ? $new_instance['posts_per_page'] : '5'; // по умолчанию выводятся 5 постов
+		return $instance;
+	}
+}
+
+/*
+ * регистрация виджета
+ */
+function event_widget_load() {
+	register_widget( 'eventsWidget' );
+}
+add_action( 'widgets_init', 'event_widget_load' );
