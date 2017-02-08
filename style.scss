@@ -341,3 +341,54 @@ object {
 text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #ffffff;
 transition: all 0.8s ease;
 }
+
+.widget__event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-meta {
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        justify-content: space-around;
+        background: $title-color;
+        transition: background 0.6s ease;
+        &-time,
+        &-date {
+            a {
+                color: #fff;
+            }
+        }
+        &-time {
+            font-size: 40px;
+            font-family: $site__title-font;
+        }
+        &-date {
+            font-size: 20px;
+            font-family: $title-font;
+        }
+        a {
+            color: #ffffff!important;
+        }
+        &:hover {
+            transition: background 0.6s ease;
+            background: #fff;
+            a {
+            color: $title-color!important;
+            }
+        }
+    }
+    &-title {
+        text-align: justify;
+        padding: 10px;
+        font-family: $title-font;
+        text-transform: uppercase;
+    }
+}
+.event__widget-title {    
+    @extend .page-title;
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+ 
