@@ -14,20 +14,21 @@ footer
     }
 }
 
-.gckid-info  {
+.cult-man-info  {
     //padding-top: 15px;
     color: $footer-txt-color;
     h5 {
-        text-align: justify;
+        text-align: left;
         border-bottom: 2px solid;
-        padding-bottom: 5px;}
+        padding-bottom: 5px;
+    margin-bottom: 10px;}
 
     p {
         text-align: left;
     }
 }
 
-.map-gckid {
+.map-cult-man {
     margin: 0px;
-    border: 2px solid #333;
+    //border: 2px solid #333;
 }
