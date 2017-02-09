@@ -28,9 +28,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .site-title  {
     font-family: $site__title-font;
-    font-size: $title-size;
+    font-size: $site__title-size;
     text-transform: uppercase;
     text-align: center;
+    //border-bottom: 1px solid #fff;
     }
 
 .site-title a, h1.site-title a {
@@ -45,9 +46,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .site-description {
     text-align: center;
     color: $site__description-color;
+    font-size: $site__description-size;
     margin: -40px 0px 0px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    display: block;
 }
 
 .site-branding {
@@ -62,7 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     align-items: center;
     justify-content: flex-end;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: rgba(2, 9, 51, 0.54);
     height: auto;
 }

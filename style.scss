@@ -44,11 +44,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
-$title-size: 30px;
+$site__title-size: 30px;
 $site__title-font: "Exo2Bold";
 $Site__font-regular: "OpenSansRegular";
 $site__title-color: #fff;
+
+$site__description-size: 16px;
 $site__description-color: #fff;
+
 $txt__shadow-dark: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000;
 $title-font: "OpenSansBold";
 $title-color:/* #3979b5;*/#3934b5;

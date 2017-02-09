@@ -300,9 +300,11 @@ img.custom-logo {
 .site-description {
   text-align: center;
   color: #fff;
+  font-size: 16px;
   margin: -40px 0px 0px;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  display: block; }
 
 .site-branding {
   position: absolute;
@@ -331,7 +333,7 @@ img.custom-logo {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   background-color: rgba(2, 9, 51, 0.54);
   height: auto; }
 
