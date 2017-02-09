@@ -240,7 +240,7 @@ object {
     height: 700px;
     width: auto;
     &-entry {
-        margin-top: 180px;
+        margin-top: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -385,10 +385,10 @@ transition: all 0.8s ease;
         text-transform: uppercase;
     }
 }
+
 .event__widget-title {    
     @extend .page-title;
     display: block;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
- 
