@@ -31,13 +31,14 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<nav id="site-navigation" class="main-navigation " role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true"><?php esc_html_e( 'Primary Menu', 'cult-man' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="button-toggle"><i class="fa fa-bars" aria-hidden="true"></i>  НАВИГАЦИЯ</span>
+                            </button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 		<!-- #site-navigation -->
 		<div class="site-branding" style="">
 
-			<div  class="container-fluid">
+			<div  class="logo-wrapper">
 			<?php echo get_custom_logo(); ?>
 			</div><!-- container  -->
 

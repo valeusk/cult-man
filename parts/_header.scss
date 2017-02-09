@@ -5,6 +5,7 @@
 
 img.custom-logo {
     box-shadow: none;
+    margin-top: 20px;
 }
 
 .headgrad {
@@ -63,7 +64,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgba(2, 9, 51, 0.54);
-    height: 180px;
+    height: auto;
 }
 
 .site-header {
