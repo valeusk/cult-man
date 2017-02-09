@@ -965,18 +965,18 @@ footer
     .site-footer a:hover {
       text-decoration: underline; }
 
-.gckid-info {
+.cult-man-info {
   color: #b5b5b5; }
-  .gckid-info h5 {
-    text-align: justify;
+  .cult-man-info h5 {
+    text-align: left;
     border-bottom: 2px solid;
-    padding-bottom: 5px; }
-  .gckid-info p {
+    padding-bottom: 5px;
+    margin-bottom: 10px; }
+  .cult-man-info p {
     text-align: left; }
 
-.map-gckid {
-  margin: 0px;
-  border: 2px solid #333; }
+.map-cult-man {
+  margin: 0px; }
 
 /*--------------------------------------------------------------
 # content
@@ -1856,4 +1856,5 @@ object {
   display: block;
   margin-bottom: 0px;
   padding-bottom: 0px; }
+
 /*# sourceMappingURL=style.css.map */
