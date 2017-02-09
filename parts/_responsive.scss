@@ -102,6 +102,10 @@ object {
         display: block;
     }
 
+    .main-navigation {
+     background-color: rgb(18, 30, 80);
+    }
+
     h2.entry-title {
         font-size: 16px;
         font-family: $title-font, sans-serif;
@@ -115,6 +119,7 @@ object {
             }
         }
     }
+
     h1.entry-title {
         font-size: 16px;
         font-family: $title-font, sans-serif;
@@ -134,10 +139,12 @@ object {
         padding-right: 10px;
         height: auto;
     }
+
     .custom-logo {
         width: 95%;
         height: auto;
     }
+
     .site-title {
         //padding-bottom: 15px;
         a {
@@ -147,41 +154,82 @@ object {
         padding-bottom: 10px;
         border-bottom: 1px solid #fff;
     }
+
     .site-description {
         font-size: 14px;
         p {
             line-height: 1;
         }
     }
+
     .menu-toggle {
         display: block;
         color: #fff;
         text-align: center;
     }
+
     button.menu-toggle {
         padding: 5px;
         &:hover {
             color: #fff;
         }
     }
+
     .slider__item-entry-title {
         a {
             font-size: 20px!important;
         }
     }
+
     .slider__item-entry-meta-date {
         p {
             font-size: 18px!important;
         }
     }
+
     .slider__item-entry-meta-time {
         p {
             font-size: 18px!important;
         }
     }
 
+    .sub-menu {
+        display: none!important;
+    }
 
+    .current-menu-item {
+        a {color: #fff;}
+        background-color: $title-color;
+    }
 
+    .current-menu-item {
+    background-color: $menu__curent-item-color;
+    border-radius: none;
+    a {
+        color: #fff;
+        font-family: $menu__font;
+        text-shadow: none;
+        border-radius: none;
+    }
+    }
+
+    .main-navigation li {
+        display: list-item;
+        margin-right: 0;
+        &:hover {
+            a {color: #fff;}
+            background-color: $title-color;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 10px;
+        }
+
+        &:first-child {
+            border-top: 1px solid $border-color;
+        }
+    }
 }
 
 /* Small Devices, Tablets */
