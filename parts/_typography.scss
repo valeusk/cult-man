@@ -8,7 +8,7 @@ select,
 textarea {
 	color: #333;
 	font-family: "OpenSansRegular", sans-serif;
-	font-size: 16px;
+	//font-size: $font-size-regular;
 	line-height: 1.4;
 }
 
@@ -24,29 +24,48 @@ h6 {
     font-family: $title-font;
 }
 
+@mixin title-sizes ($font-size-base){
 h1 {
-    font-size: 32px;
+    font-size: ($font-size-base + 12px)!important;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: ($font-size-base+10px)!important;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: ($font-size-base + 8px)!important;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: ($font-size-base + 6px)!important;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: ($font-size-base + 4px)!important;
 }
 
 h6 {
-    font-size: 14px;
+    font-size: $font-size-base!important;
 }
+
+.site-title {
+       a {font-size: $font-size-base +16px;}
+    }
+}
+@mixin text-content__size ($scale) {
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: ($font-size-base+2px)!important;
+    }
+}
+
+@include text-content__size(12);
+@include title-sizes (14);
+
 
 
 .box-shadow-custom {box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53) , -5px -3px 15px -3px rgba(49, 24, 82, 0.5) ;}
@@ -94,8 +113,12 @@ h1.entry-title {
 
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 10px;
     font-family: $Site__font-regular;
+}
+
+a.more-link {
+    margin-bottom: 10px;
 }
 
 dfn,
@@ -152,4 +175,14 @@ big {
 
 .text__shadow-dark {
     text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000;
+}
+
+.cat-links {
+    a {
+        background: #b9efa7;
+        padding: 3px;
+        border-radius: 3px;
+        font-size: 95%;
+        text-transform: uppercase;
+    }
 }

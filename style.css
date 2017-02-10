@@ -286,9 +286,13 @@ img.custom-logo {
 
 .site-title {
   font-family: "Exo2Bold";
-  font-size: 30px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  line-height: 170%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff; }
+  .site-title a {
+    font-size: 30px; }
 
 .site-title a, h1.site-title a {
   color: #fff;
@@ -301,10 +305,11 @@ img.custom-logo {
   text-align: center;
   color: #fff;
   font-size: 16px;
-  margin: -40px 0px 0px;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block; }
+  .site-description p {
+    margin-bottom: none; }
 
 .site-branding {
   position: absolute;
@@ -333,7 +338,6 @@ img.custom-logo {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-top: 20px;
-  padding-bottom: 10px;
   background-color: rgba(2, 9, 51, 0.54);
   height: auto; }
 
@@ -370,7 +374,6 @@ select,
 textarea {
   color: #333;
   font-family: "OpenSansRegular", sans-serif;
-  font-size: 16px;
   line-height: 1.4; }
 
 h1,
@@ -384,23 +387,33 @@ h6 {
   margin-bottom: 5px;
   font-family: "OpenSansBold"; }
 
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 16px !important; }
+
 h1 {
-  font-size: 32px; }
+  font-size: 26px !important; }
 
 h2 {
-  font-size: 28px; }
+  font-size: 24px !important; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 22px !important; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 20px !important; }
 
 h5 {
-  font-size: 18px; }
+  font-size: 18px !important; }
 
 h6 {
-  font-size: 14px; }
+  font-size: 14 !important; }
+
+.site-title a {
+  font-size: 30px; }
 
 .box-shadow-custom {
   box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
@@ -438,8 +451,11 @@ h1.entry-title {
   text-transform: uppercase; }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 10px;
   font-family: "OpenSansRegular"; }
+
+a.more-link {
+  margin-bottom: 10px; }
 
 dfn,
 cite,
@@ -487,6 +503,13 @@ big {
 
 .text__shadow-dark, .contur-txt-dark {
   text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000; }
+
+.cat-links a {
+  background: #b9efa7;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 95%;
+  text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -1224,6 +1247,34 @@ object {
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; }
+
+  h1 {
+    font-size: 24px !important; }
+
+  h2 {
+    font-size: 22px !important; }
+
+  h3 {
+    font-size: 20px !important; }
+
+  h4 {
+    font-size: 18px !important; }
+
+  h5 {
+    font-size: 16px !important; }
+
+  h6 {
+    font-size: 12px !important; }
+
+  .site-title a {
+    font-size: 28px; }
+
   #site-navigation {
     display: block; }
 
@@ -1231,7 +1282,6 @@ object {
     background-color: #121e50; }
 
   h2.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     text-transform: uppercase; }
@@ -1243,7 +1293,6 @@ object {
                 transition: all 0.2s ease; }
 
   h1.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     padding-left: 20px;
@@ -1273,13 +1322,6 @@ object {
   .custom-logo {
     width: 95%;
     height: auto; }
-
-  .site-title {
-    line-height: 90% !important;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff; }
-    .site-title a {
-      font-size: 20px; }
 
   .site-description {
     font-size: 14px; }
@@ -1336,11 +1378,38 @@ object {
       border-top: 1px solid #bcbaba; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 22px !important; }
+
+  h2 {
+    font-size: 20px !important; }
+
+  h3 {
+    font-size: 18px !important; }
+
+  h4 {
+    font-size: 16px !important; }
+
+  h5 {
+    font-size: 14px !important; }
+
+  h6 {
+    font-size: 10px !important; }
+
+  .site-title a {
+    font-size: 26px; }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; }
+
   #site-navigation {
     display: block; }
 
   h2.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     text-transform: uppercase; }
@@ -1352,7 +1421,6 @@ object {
                 transition: all 0.2s ease; }
 
   h1.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     padding-left: 20px;
@@ -1382,13 +1450,6 @@ object {
   .custom-logo {
     width: 95%;
     height: auto; }
-
-  .site-title {
-    line-height: 90% !important;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff; }
-    .site-title a {
-      font-size: 20px; }
 
   .site-description {
     font-size: 14px; }
@@ -1415,11 +1476,38 @@ object {
     font-size: 18px !important; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px !important; }
+
+  h2 {
+    font-size: 18px !important; }
+
+  h3 {
+    font-size: 16px !important; }
+
+  h4 {
+    font-size: 14px !important; }
+
+  h5 {
+    font-size: 12px !important; }
+
+  h6 {
+    font-size: 8px !important; }
+
+  .site-title a {
+    font-size: 24px; }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; }
+
   #site-navigation {
     display: block; }
 
   h2.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     text-transform: uppercase; }
@@ -1431,7 +1519,6 @@ object {
                 transition: all 0.2s ease; }
 
   h1.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     padding-left: 20px;
@@ -1461,13 +1548,6 @@ object {
   .custom-logo {
     width: 95%;
     height: auto; }
-
-  .site-title {
-    line-height: 90% !important;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff; }
-    .site-title a {
-      font-size: 20px; }
 
   .site-description {
     font-size: 14px; }
@@ -1494,11 +1574,38 @@ object {
     font-size: 18px !important; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 18px !important; }
+
+  h2 {
+    font-size: 16px !important; }
+
+  h3 {
+    font-size: 14px !important; }
+
+  h4 {
+    font-size: 12px !important; }
+
+  h5 {
+    font-size: 10px !important; }
+
+  h6 {
+    font-size: 6px !important; }
+
+  .site-title a {
+    font-size: 22px; }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; }
+
   #site-navigation {
     display: block; }
 
   h2.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     text-transform: uppercase; }
@@ -1510,7 +1617,6 @@ object {
                 transition: all 0.2s ease; }
 
   h1.entry-title {
-    font-size: 16px;
     font-family: "OpenSansBold", sans-serif;
     margin-bottom: 5px;
     padding-left: 20px;
@@ -1540,13 +1646,6 @@ object {
   .custom-logo {
     width: 95%;
     height: auto; }
-
-  .site-title {
-    line-height: 90% !important;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff; }
-    .site-title a {
-      font-size: 20px; }
 
   .site-description {
     font-size: 14px; }
@@ -1685,14 +1784,15 @@ object {
   top: 0;
   margin-top: 630px;
   z-index: 18;
-  left: 50%;
+  width: 48px;
+  left: 47%;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 7px;
   padding-bottom: 4px;
   border-radius: 50%;
   color: #fff;
-  font-size: 30px; }
+  font-size: 30px !important; }
 
 .button-proto, .slider__item-entry-meta-date p, .slider__item-entry-meta-time p, .owl-nav-proto, .owl-prev, .owl-next, #downclick {
   border: 2px solid #fff;
@@ -1891,4 +1991,5 @@ object {
 
 .gallery-caption {
   display: block; }
+
 /*# sourceMappingURL=style.css.map */

@@ -82,6 +82,10 @@ $widget__event-meta-hover-background:  #fff;
 //Виджет //title
 $widget__event-event-title-font: $title-font;
 $widget__event-event-title-font-size: 16px;
+//типографика
+$font-size-base: 14px;
+$font-size-regular: $font-size-base + 2px;
+
 
 @import 'parts/reset';
 @import 'parts/fonts';
@@ -250,7 +254,4 @@ object {
 .gallery-caption {
 	display: block;
 }
-
-
-
 

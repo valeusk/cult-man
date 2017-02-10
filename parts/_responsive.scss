@@ -98,7 +98,10 @@ object {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  #site-navigation {
+    @include text-content__size(12px);
+    @include title-sizes (12px);
+
+    #site-navigation {
         display: block;
     }
 
@@ -107,7 +110,7 @@ object {
     }
 
     h2.entry-title {
-        font-size: 16px;
+        //font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         text-transform: uppercase;
@@ -121,7 +124,7 @@ object {
     }
 
     h1.entry-title {
-        font-size: 16px;
+        //font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         padding-left: 20px;
@@ -143,16 +146,6 @@ object {
     .custom-logo {
         width: 95%;
         height: auto;
-    }
-
-    .site-title {
-        //padding-bottom: 15px;
-        a {
-            font-size: 20px;
-        }
-        line-height: 90%!important;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #fff;
     }
 
     .site-description {
@@ -234,12 +227,15 @@ object {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-     #site-navigation {
+    @include title-sizes (10px);
+    @include text-content__size(10px);
+    //$font-size-base: 10px;
+    #site-navigation {
         display: block;
     }
 
     h2.entry-title {
-        font-size: 16px;
+        //font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         text-transform: uppercase;
@@ -252,7 +248,7 @@ object {
         }
     }
     h1.entry-title {
-        font-size: 16px;
+        //font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         padding-left: 20px;
@@ -273,15 +269,6 @@ object {
     .custom-logo {
         width: 95%;
         height: auto;
-    }
-    .site-title {
-        //padding-bottom: 15px;
-        a {
-            font-size: 20px;
-        }
-        line-height: 90%!important;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #fff;
     }
     .site-description {
         font-size: 14px;
@@ -320,11 +307,12 @@ object {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    @include title-sizes (8px);
+    @include text-content__size(8px);
     #site-navigation {
         display: block;
     }
     h2.entry-title {
-        font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         text-transform: uppercase;
@@ -337,7 +325,7 @@ object {
         }
     }
     h1.entry-title {
-        font-size: 16px;
+        //font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         padding-left: 20px;
@@ -359,15 +347,7 @@ object {
         width: 95%;
         height: auto;
     }
-    .site-title {
-        //padding-bottom: 15px;
-        a {
-            font-size: 20px;
-        }
-        line-height: 90%!important;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #fff;
-    }
+
     .site-description {
         font-size: 14px;
         p {
@@ -404,11 +384,13 @@ object {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+    @include title-sizes (6px);
+    @include text-content__size(6px);
     #site-navigation {
         display: block;
     }
     h2.entry-title {
-        font-size: 16px;
+        //font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         text-transform: uppercase;
@@ -421,7 +403,7 @@ object {
         }
     }
     h1.entry-title {
-        font-size: 16px;
+        //font-size: 16px;
         font-family: $title-font, sans-serif;
         margin-bottom: 5px;
         padding-left: 20px;
@@ -442,15 +424,6 @@ object {
     .custom-logo {
         width: 95%;
         height: auto;
-    }
-    .site-title {
-        //padding-bottom: 15px;
-        a {
-            font-size: 20px;
-        }
-        line-height: 90%!important;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #fff;
     }
     .site-description {
         font-size: 14px;
