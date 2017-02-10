@@ -53,6 +53,17 @@ h6 {
     }
 
     .slider__item-entry-meta-date, .slider__item-entry-meta-time {font-size: $font-size-base + 8px;}
+    .widget__event-meta-time {
+        font-size: $font-size-base + 26px;
+    }
+
+    .widget__event-meta-date {
+        font-size: $font-size-base + 6px;
+    }
+    .page-title {
+        font-size: $font-size-base + 16px;
+    }
+
 }
 @mixin text-content__size ($scale) {
     body,
@@ -62,8 +73,11 @@ h6 {
     textarea {
         font-size: ($font-size-base+2px)!important;
     }
-}
+    .widget__event-event-title {
+        font-size: $font-size-base + 2px;
+    }
 
+}
 @include text-content__size(12);
 @include title-sizes (14);
 
@@ -108,7 +122,6 @@ h1.entry-title {
     margin-bottom: 1.1em;
     padding-bottom: 0.1em;
     font-family: "OpenSansRegular";
-    font-size: 30px;
     text-transform: uppercase;
 }
 

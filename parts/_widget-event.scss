@@ -16,11 +16,11 @@
             }
         }
         &-time {
-            font-size: 40px;
+            //font-size: 40px;
             font-family: $site__title-font;
         }
         &-date {
-            font-size: 20px;
+            //font-size: 20px;
             font-family: $title-font;
         }
         a {
@@ -39,7 +39,7 @@
         padding: 10px;
         font-family: $widget__event-event-title-font;
         text-transform: uppercase;
-        font-size: $widget__event-event-title-font-size;
+        //font-size: $widget__event-event-title-font-size;
     }
     &-title {
         @extend .page-title;
