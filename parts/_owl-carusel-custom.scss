@@ -17,7 +17,6 @@
             a {
                 color: #fff;
                 font-family: $title-font;
-                font-size: 40px;
                 transition: $transitionall;
                 text-transform: uppercase;
                 &:hover {
@@ -36,7 +35,6 @@
                     @extend .button-proto;
                     padding: 5px 20px;
                     border-radius: 6px;
-                    font-size: 22px;
                     text-align: center;
                     font-family: $site__title-font;
                 }
@@ -44,6 +42,8 @@
         }
     }
 }
+
+
 
 .owl-nav-proto {
     //background: rgba(24, 32, 47, 0.58);

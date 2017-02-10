@@ -415,6 +415,12 @@ h6 {
 .site-title a {
   font-size: 30px; }
 
+.slider__item-entry-title a {
+  font-size: 36px; }
+
+.slider__item-entry-meta-date, .slider__item-entry-meta-time {
+  font-size: 22px; }
+
 .box-shadow-custom {
   box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
 
@@ -1275,6 +1281,12 @@ object {
   .site-title a {
     font-size: 28px; }
 
+  .slider__item-entry-title a {
+    font-size: 34px; }
+
+  .slider__item-entry-meta-date, .slider__item-entry-meta-time {
+    font-size: 20px; }
+
   #site-navigation {
     display: block; }
 
@@ -1338,15 +1350,6 @@ object {
     button.menu-toggle:hover {
       color: #fff; }
 
-  .slider__item-entry-title a {
-    font-size: 20px !important; }
-
-  .slider__item-entry-meta-date p {
-    font-size: 18px !important; }
-
-  .slider__item-entry-meta-time p {
-    font-size: 18px !important; }
-
   .sub-menu {
     display: none !important; }
 
@@ -1399,6 +1402,12 @@ object {
   .site-title a {
     font-size: 26px; }
 
+  .slider__item-entry-title a {
+    font-size: 32px; }
+
+  .slider__item-entry-meta-date, .slider__item-entry-meta-time {
+    font-size: 18px; }
+
   body,
   button,
   input,
@@ -1464,16 +1473,7 @@ object {
   button.menu-toggle {
     padding: 5px; }
     button.menu-toggle:hover {
-      color: #fff; }
-
-  .slider__item-entry-title a {
-    font-size: 20px !important; }
-
-  .slider__item-entry-meta-date p {
-    font-size: 18px !important; }
-
-  .slider__item-entry-meta-time p {
-    font-size: 18px !important; } }
+      color: #fff; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   h1 {
@@ -1497,6 +1497,12 @@ object {
   .site-title a {
     font-size: 24px; }
 
+  .slider__item-entry-title a {
+    font-size: 30px; }
+
+  .slider__item-entry-meta-date, .slider__item-entry-meta-time {
+    font-size: 16px; }
+
   body,
   button,
   input,
@@ -1562,16 +1568,7 @@ object {
   button.menu-toggle {
     padding: 5px; }
     button.menu-toggle:hover {
-      color: #fff; }
-
-  .slider__item-entry-title a {
-    font-size: 20px !important; }
-
-  .slider__item-entry-meta-date p {
-    font-size: 18px !important; }
-
-  .slider__item-entry-meta-time p {
-    font-size: 18px !important; } }
+      color: #fff; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   h1 {
@@ -1595,6 +1592,12 @@ object {
   .site-title a {
     font-size: 22px; }
 
+  .slider__item-entry-title a {
+    font-size: 28px; }
+
+  .slider__item-entry-meta-date, .slider__item-entry-meta-time {
+    font-size: 14px; }
+
   body,
   button,
   input,
@@ -1661,15 +1664,6 @@ object {
     padding: 5px; }
     button.menu-toggle:hover {
       color: #fff; }
-
-  .slider__item-entry-title a {
-    font-size: 20px !important; }
-
-  .slider__item-entry-meta-date p {
-    font-size: 18px !important; }
-
-  .slider__item-entry-meta-time p {
-    font-size: 18px !important; }
 
   .owl-prev,
   .owl-next {
@@ -1726,7 +1720,6 @@ object {
       .slider__item-entry-title a {
         color: #fff;
         font-family: "OpenSansBold";
-        font-size: 40px;
         -webkit-transition: all 0.6s ease;
                 transition: all 0.6s ease;
         text-transform: uppercase; }
@@ -1744,7 +1737,6 @@ object {
         .slider__item-entry-meta-date p, .slider__item-entry-meta-time p {
           padding: 5px 20px;
           border-radius: 6px;
-          font-size: 22px;
           text-align: center;
           font-family: "Exo2Bold"; }
 
@@ -1991,5 +1983,4 @@ object {
 
 .gallery-caption {
   display: block; }
-
 /*# sourceMappingURL=style.css.map */

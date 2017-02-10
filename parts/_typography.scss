@@ -24,34 +24,35 @@ h6 {
     font-family: $title-font;
 }
 
-@mixin title-sizes ($font-size-base){
-h1 {
-    font-size: ($font-size-base + 12px)!important;
-}
-
-h2 {
-    font-size: ($font-size-base+10px)!important;
-}
-
-h3 {
-    font-size: ($font-size-base + 8px)!important;
-}
-
-h4 {
-    font-size: ($font-size-base + 6px)!important;
-}
-
-h5 {
-    font-size: ($font-size-base + 4px)!important;
-}
-
-h6 {
-    font-size: $font-size-base!important;
-}
-
-.site-title {
-       a {font-size: $font-size-base +16px;}
+@mixin title-sizes ($font-size-base) {
+    h1 {
+        font-size: ($font-size-base + 12px)!important;
     }
+    h2 {
+        font-size: ($font-size-base+10px)!important;
+    }
+    h3 {
+        font-size: ($font-size-base + 8px)!important;
+    }
+    h4 {
+        font-size: ($font-size-base + 6px)!important;
+    }
+    h5 {
+        font-size: ($font-size-base + 4px)!important;
+    }
+    h6 {
+        font-size: $font-size-base!important;
+    }
+    .site-title {
+        a {
+            font-size: $font-size-base +16px;
+        }
+    }
+    .slider__item-entry-title a {
+        font-size: $font-size-base + 22px;
+    }
+
+    .slider__item-entry-meta-date, .slider__item-entry-meta-time {font-size: $font-size-base + 8px;}
 }
 @mixin text-content__size ($scale) {
     body,
