@@ -71,6 +71,18 @@ $box-shadow-all: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rg
 
 $footer-color: #41416c;
 $footer-txt-color:#b5b5b5;
+
+//Виджет //meta
+$widget__event-meta-background: $title-color;
+$widget__event-meta-text-color: #ffffff;
+$widget__event-meta-date-font-size: 20px;
+$widget__event-meta-time-font-size: 40px;
+//Виджет //meta //hover
+$widget__event-meta-hover-background:  #fff;
+//Виджет //title
+$widget__event-event-title-font: $title-font;
+$widget__event-event-title-font-size: 16px;
+
 @import 'parts/reset';
 @import 'parts/fonts';
 @import 'parts/header';
@@ -85,6 +97,9 @@ $footer-txt-color:#b5b5b5;
 @import 'parts/footer';
 @import 'parts/content';
 @import 'parts/responsive';
+@import 'parts/owl-carusel-custom';
+@import 'parts/_widget-event';
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -236,162 +251,6 @@ object {
 	display: block;
 }
 
-.slider__item {
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-    height: 700px;
-    width: auto;
-    &-entry {
-        margin-top: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        &-title {
-            padding:0 40px;
-            text-align: center;
-            a {
-                color: #fff;
-                font-family: $title-font;
-                font-size: 40px;
-                transition: $transitionall;
-                text-transform: uppercase;
-                &:hover {
-                @extend .contur-text-light;
-                }
-            }
-        }
-        &-meta {
-            //height: 100%;
-            display: flex;
-            justify-content: center;
-            &-date,
-            &-time {
-                padding: 0px 20px;
-                p {
-                    @extend .button-proto;
-                    padding: 5px 20px;
-                    border-radius: 6px;
-                    font-size: 22px;
-                    text-align: center;
-                    font-family: $site__title-font;
-                }
-            }
-        }
-    }
-}
 
-.owl-nav-proto {
-    //background: rgba(24, 32, 47, 0.58);
-    width: 30px;
-    height: 70px;
-    font-size: 30px;
-    //color: #fff;
-    position: absolute;
-    top: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @extend .button-proto;
-    i {
-        padding: 5px;
-    }
-}
 
-.owl-prev {
-    @extend .owl-nav-proto;
-    border-radius: 0% 50% 50% 0%;
-    text-align: left;
-   }
 
-.owl-next {
-    @extend .owl-nav-proto;
-    right: 0;
-    border-radius: 50% 0% 0% 50%;
-    text-align: right;
-}
-
-#downclick {
-    position: absolute;
-    top: 0;
-    margin-top: 630px;
-    z-index: 18;
-    left: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 7px;
-    padding-bottom: 4px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 30px;
-    @extend .button-proto;
-}
-
-.button-proto {
-    border: 2px solid #fff;
-    background: transparent;
-    text-transform: uppercase;
-    color: #fff;
-    transition: background 0.5s ease;
-    &:hover {
-        background: #1928AD;
-    }
-}
-
-.contur-text-light {
-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #ffffff;
-transition: all 0.8s ease;
-}
-
-.widget__event {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    &-meta {
-        display: flex;
-        flex-direction: column;
-        border-radius: 3px;
-        justify-content: space-around;
-        background: $title-color;
-        transition: background 0.6s ease;
-        &-time,
-        &-date {
-            a {
-                color: #fff;
-            }
-        }
-        &-time {
-            font-size: 40px;
-            font-family: $site__title-font;
-        }
-        &-date {
-            font-size: 20px;
-            font-family: $title-font;
-        }
-        a {
-            color: #ffffff!important;
-        }
-        &:hover {
-            transition: background 0.6s ease;
-            background: #fff;
-            a {
-            color: $title-color!important;
-            }
-        }
-    }
-    &-title {
-        text-align: justify;
-        padding: 10px;
-        font-family: $title-font;
-        text-transform: uppercase;
-    }
-}
-
-.event__widget-title {    
-    @extend .page-title;
-    display: block;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}

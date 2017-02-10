@@ -1,0 +1,108 @@
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 700px;
+    width: auto;
+    &-entry {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &-title {
+            padding:0 40px;
+            text-align: center;
+            a {
+                color: #fff;
+                font-family: $title-font;
+                font-size: 40px;
+                transition: $transitionall;
+                text-transform: uppercase;
+                &:hover {
+                @extend .contur-text-light;
+                }
+            }
+        }
+        &-meta {
+            //height: 100%;
+            display: flex;
+            justify-content: center;
+            &-date,
+            &-time {
+                padding: 0px 20px;
+                p {
+                    @extend .button-proto;
+                    padding: 5px 20px;
+                    border-radius: 6px;
+                    font-size: 22px;
+                    text-align: center;
+                    font-family: $site__title-font;
+                }
+            }
+        }
+    }
+}
+
+.owl-nav-proto {
+    //background: rgba(24, 32, 47, 0.58);
+    width: 30px;
+    height: 70px;
+    font-size: 30px;
+    //color: #fff;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @extend .button-proto;
+    i {
+        padding: 5px;
+    }
+}
+
+.owl-prev {
+    @extend .owl-nav-proto;
+    border-radius: 0% 50% 50% 0%;
+    text-align: left;
+   }
+
+.owl-next {
+    @extend .owl-nav-proto;
+    right: 0;
+    border-radius: 50% 0% 0% 50%;
+    text-align: right;
+}
+
+#downclick {
+    position: absolute;
+    top: 0;
+    margin-top: 630px;
+    z-index: 18;
+    left: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    @extend .button-proto;
+}
+
+.button-proto {
+    border: 2px solid #fff;
+    background: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background 0.5s ease;
+    &:hover {
+        background: #1928AD;
+    }
+}
+
+.contur-text-light {
+text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #ffffff;
+transition: all 0.8s ease;
+}

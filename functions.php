@@ -237,7 +237,7 @@ class eventsWidget extends WP_Widget {
 
 		if ( ! empty( $title ) )
 			echo $args['before_title'] . $title . $args['after_title'];
-        echo('<span class="event__widget-title">'.'Анонсы'.'</span>');
+        echo('<span class="widget__event-title">'.'Анонсы'.'</span>');
 		$q = new WP_Query('post_type=events',"posts_per_page=$posts_per_page");
 		if( $q->have_posts() ):
 			?><ul><?php
@@ -266,7 +266,7 @@ class eventsWidget extends WP_Widget {
                         </a>
     </div>
     </div>
-    <div class="widget__event-title">
+    <div class="widget__event-event-title">
         <a href="<?php the_permalink(); ?>">
             <?php the_title() ?>
         </a>

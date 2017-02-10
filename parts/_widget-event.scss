@@ -1,0 +1,50 @@
+.widget__event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-meta {
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        justify-content: space-around;
+        background: $widget__event-meta-background;
+        transition: background 0.6s ease;
+        &-time,
+        &-date {
+            a {
+                color: #fff;
+            }
+        }
+        &-time {
+            font-size: 40px;
+            font-family: $site__title-font;
+        }
+        &-date {
+            font-size: 20px;
+            font-family: $title-font;
+        }
+        a {
+            color: $widget__event-meta-text-color!important;
+        }
+        &:hover {
+            transition: background 0.6s ease;
+            background: $widget__event-meta-hover-background;
+            a {
+                color: $title-color!important;
+            }
+        }
+    }
+    &-event-title {
+        text-align: justify;
+        padding: 10px;
+        font-family: $widget__event-event-title-font;
+        text-transform: uppercase;
+        font-size: $widget__event-event-title-font-size;
+    }
+    &-title {
+        @extend .page-title;
+        display: block;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}
