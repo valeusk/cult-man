@@ -394,6 +394,9 @@ select,
 textarea {
   font-size: 16px !important; }
 
+.widget__event-event-title {
+  font-size: 16px; }
+
 h1 {
   font-size: 26px !important; }
 
@@ -420,6 +423,15 @@ h6 {
 
 .slider__item-entry-meta-date, .slider__item-entry-meta-time {
   font-size: 22px; }
+
+.widget__event-meta-time {
+  font-size: 40px; }
+
+.widget__event-meta-date {
+  font-size: 20px; }
+
+.page-title, .widget__event-title {
+  font-size: 30px; }
 
 .box-shadow-custom {
   box-shadow: 3px 3px 15px 3px rgba(49, 24, 82, 0.53), -5px -3px 15px -3px rgba(49, 24, 82, 0.5); }
@@ -453,7 +465,6 @@ h1.entry-title {
   margin-bottom: 1.1em;
   padding-bottom: 0.1em;
   font-family: "OpenSansRegular";
-  font-size: 30px;
   text-transform: uppercase; }
 
 p {
@@ -998,7 +1009,7 @@ footer
 
 .cult-man-info {
   color: #b5b5b5; }
-  .cult-man-info h5 {
+  .cult-man-info h3 {
     text-align: left;
     border-bottom: 2px solid;
     padding-bottom: 5px;
@@ -1020,7 +1031,7 @@ footer
   margin-bottom: 20px; }
 
 .thumbnail-my {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   .thumbnail-my img {
     width: 100%;
     height: auto; }
@@ -1260,6 +1271,9 @@ object {
   textarea {
     font-size: 16px !important; }
 
+  .widget__event-event-title {
+    font-size: 16px; }
+
   h1 {
     font-size: 24px !important; }
 
@@ -1286,6 +1300,15 @@ object {
 
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
     font-size: 20px; }
+
+  .widget__event-meta-time {
+    font-size: 38px; }
+
+  .widget__event-meta-date {
+    font-size: 18px; }
+
+  .page-title, .widget__event-title {
+    font-size: 28px; }
 
   #site-navigation {
     display: block; }
@@ -1378,7 +1401,10 @@ object {
       border-bottom: none;
       padding-bottom: 10px; }
     .main-navigation li:first-child {
-      border-top: 1px solid #bcbaba; } }
+      border-top: 1px solid #bcbaba; }
+
+  .widget-area {
+    margin-left: 0px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   h1 {
@@ -1408,12 +1434,24 @@ object {
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
     font-size: 18px; }
 
+  .widget__event-meta-time {
+    font-size: 36px; }
+
+  .widget__event-meta-date {
+    font-size: 16px; }
+
+  .page-title, .widget__event-title {
+    font-size: 26px; }
+
   body,
   button,
   input,
   select,
   textarea {
     font-size: 16px !important; }
+
+  .widget__event-event-title {
+    font-size: 16px; }
 
   #site-navigation {
     display: block; }
@@ -1503,12 +1541,24 @@ object {
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
     font-size: 16px; }
 
+  .widget__event-meta-time {
+    font-size: 34px; }
+
+  .widget__event-meta-date {
+    font-size: 14px; }
+
+  .page-title, .widget__event-title {
+    font-size: 24px; }
+
   body,
   button,
   input,
   select,
   textarea {
     font-size: 16px !important; }
+
+  .widget__event-event-title {
+    font-size: 16px; }
 
   #site-navigation {
     display: block; }
@@ -1598,12 +1648,24 @@ object {
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
     font-size: 14px; }
 
+  .widget__event-meta-time {
+    font-size: 32px; }
+
+  .widget__event-meta-date {
+    font-size: 12px; }
+
+  .page-title, .widget__event-title {
+    font-size: 22px; }
+
   body,
   button,
   input,
   select,
   textarea {
     font-size: 16px !important; }
+
+  .widget__event-event-title {
+    font-size: 16px; }
 
   #site-navigation {
     display: block; }
@@ -1835,10 +1897,8 @@ object {
     .widget__event-meta-time a, .widget__event-meta-date a {
       color: #fff; }
     .widget__event-meta-time {
-      font-size: 40px;
       font-family: "Exo2Bold"; }
     .widget__event-meta-date {
-      font-size: 20px;
       font-family: "OpenSansBold"; }
     .widget__event-meta a {
       color: #ffffff !important; }
@@ -1852,8 +1912,7 @@ object {
     text-align: justify;
     padding: 10px;
     font-family: "OpenSansBold";
-    text-transform: uppercase;
-    font-size: 16px; }
+    text-transform: uppercase; }
   .widget__event-title {
     display: block;
     margin-bottom: 0px;
