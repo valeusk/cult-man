@@ -277,7 +277,7 @@ object {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    @include title-sizes (8px);
+    @include title-sizes (9px);
     @include text-content__size(8px);
     #site-navigation {
         display: block;
@@ -339,8 +339,8 @@ object {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-    @include title-sizes (6px);
-    @include text-content__size(6px);
+    @include title-sizes (10px);
+    @include text-content__size(8px);
     #site-navigation {
         display: block;
     }

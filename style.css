@@ -419,7 +419,7 @@ h6 {
   font-size: 30px; }
 
 .slider__item-entry-title a {
-  font-size: 36px; }
+  font-size: 32px; }
 
 .slider__item-entry-meta-date, .slider__item-entry-meta-time {
   font-size: 22px; }
@@ -1296,7 +1296,7 @@ object {
     font-size: 28px; }
 
   .slider__item-entry-title a {
-    font-size: 34px; }
+    font-size: 30px; }
 
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
     font-size: 20px; }
@@ -1429,7 +1429,7 @@ object {
     font-size: 26px; }
 
   .slider__item-entry-title a {
-    font-size: 32px; }
+    font-size: 28px; }
 
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
     font-size: 18px; }
@@ -1515,40 +1515,40 @@ object {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 20px !important; }
+    font-size: 21px !important; }
 
   h2 {
-    font-size: 18px !important; }
+    font-size: 19px !important; }
 
   h3 {
-    font-size: 16px !important; }
+    font-size: 17px !important; }
 
   h4 {
-    font-size: 14px !important; }
+    font-size: 15px !important; }
 
   h5 {
-    font-size: 12px !important; }
+    font-size: 13px !important; }
 
   h6 {
-    font-size: 8px !important; }
+    font-size: 9px !important; }
 
   .site-title a {
-    font-size: 24px; }
+    font-size: 25px; }
 
   .slider__item-entry-title a {
-    font-size: 30px; }
+    font-size: 27px; }
 
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
-    font-size: 16px; }
+    font-size: 17px; }
 
   .widget__event-meta-time {
-    font-size: 34px; }
+    font-size: 35px; }
 
   .widget__event-meta-date {
-    font-size: 14px; }
+    font-size: 15px; }
 
   .page-title, .widget__event-title {
-    font-size: 24px; }
+    font-size: 25px; }
 
   body,
   button,
@@ -1622,40 +1622,40 @@ object {
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   h1 {
-    font-size: 18px !important; }
+    font-size: 22px !important; }
 
   h2 {
-    font-size: 16px !important; }
+    font-size: 20px !important; }
 
   h3 {
-    font-size: 14px !important; }
+    font-size: 18px !important; }
 
   h4 {
-    font-size: 12px !important; }
+    font-size: 16px !important; }
 
   h5 {
-    font-size: 10px !important; }
+    font-size: 14px !important; }
 
   h6 {
-    font-size: 6px !important; }
+    font-size: 10px !important; }
 
   .site-title a {
-    font-size: 22px; }
+    font-size: 26px; }
 
   .slider__item-entry-title a {
     font-size: 28px; }
 
   .slider__item-entry-meta-date, .slider__item-entry-meta-time {
-    font-size: 14px; }
+    font-size: 18px; }
 
   .widget__event-meta-time {
-    font-size: 32px; }
+    font-size: 36px; }
 
   .widget__event-meta-date {
-    font-size: 12px; }
+    font-size: 16px; }
 
   .page-title, .widget__event-title {
-    font-size: 22px; }
+    font-size: 26px; }
 
   body,
   button,
@@ -2042,4 +2042,5 @@ object {
 
 .gallery-caption {
   display: block; }
+
 /*# sourceMappingURL=style.css.map */
