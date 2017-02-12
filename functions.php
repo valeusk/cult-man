@@ -149,6 +149,18 @@ function cult_man_widgets_init() {
 			'after_title' => '</h3>'
 		)
 	);
+
+    register_sidebar(
+		array(
+			'id' => 'events-page', // уникальный id для сайта, назначается правому сайдбару
+			'name' => 'Страница анонсов', // название сайдбара, которое будет отображаться в админке
+			'description' => 'Перетяните виджеты, чтобы добавить их в сайдбар.', // описание выводимое в админке для сайдбара
+			'before_widget' => '<div class="f-sidebar ">', // по умолчанию виджеты выводятся <li>-списком
+			'after_widget' => '</div>', // в этой и предыдущей строке мы задали контейнер в котором будет размещен сайдбар
+			'before_title' => '<h3 class="f-wtitle">', // если оставить пустым, будет выводиться в <h2>
+			'after_title' => '</h3>'
+		)
+	);
 }
 add_action( 'widgets_init', 'cult_man_widgets_init' );
 
@@ -247,7 +259,8 @@ class eventsWidget extends WP_Widget {
     <div class="widget__event">
     <div class="widget__event-meta">
         <div class="widget__event-meta-time">
-        <a href="<?php the_permalink(); ?>"><?php
+        <a href="<?php the_permalink(); ?>">
+                       <?php
                         $date = get_post_meta(get_the_ID(), 'Время', true);
                         if (empty ($date)) {
                         echo (''); }

@@ -10,35 +10,51 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_single() ) :
+	<header class="entry-header__events-archive">
+    <div class="widget__event-meta">
+        <div class="widget__event-meta-time">
+        <a href="<?php the_permalink(); ?>">
+                       <?php
+                        $date = get_post_meta(get_the_ID(), 'Время', true);
+                        if (empty ($date)) {
+                        echo (''); }
+                        else {
+                        echo ('&nbsp;'.(get_post_meta(get_the_ID(), 'Время', true)).'&nbsp;');}?>
+                        </a>
+        </div>
+        <div class="widget__event-meta-date">
+                        <a href="<?php the_permalink(); ?>">
+                        <?php
+                        $date = get_post_meta(get_the_ID(), 'Дата', true);
+                        if (empty ($date)) {
+                        echo (''); }
+                        else {
+                        echo ('&nbsp;'.(get_post_meta(get_the_ID(), 'Дата', true)).'&nbsp;');}?>
+                        </a>
+    </div>
+    </div>
+    <div class="entry-header__events-archive-wrapper">
+        <div class="entry-header__events-archive-wrapper-title">
+        <? if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php the_time('j F Y'); ?>
-		</div><!-- .entry-meta -->
-		<?php
+			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif; ?>
+    </div>
+        <div class="entry-header__events-archive-wrapper-place">
+                        <?php
+                        $place = get_post_meta(get_the_ID(), 'Место', true);
+                        if (empty ($place)) {
+                        echo (''); }
+                        else {
+                        echo ('<i class="fa fa-map-o" aria-hidden="true"></i> '.(get_post_meta(get_the_ID(), 'Место', true)));}?>
+        </div>
+    </div>
+
 	</header><!-- .entry-header -->
 
-	<div class="thumbnail-my">
-    <?php if ( is_single() ) : ;
-
-                    else : the_post_thumbnail('full');
-
-                endif;
-                ?>
-
-</div>
-<!-- thumbnail-my -->
-
 	<div class="entry-content">
-		<?php
+	<?	if ( is_single() ) :
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Подробнее %s', 'cult-man' ), array( 'span' => array( 'class' => array() ) ) ),
@@ -48,11 +64,15 @@
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cult-man' ),
 				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+			) );;
+		else :
 
-	<footer class="entry-footer">
-		<?php cult_man_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		endif; ?>
+	</div><!-- .entry-content -->
+<div class="thumbnail-my">
+<?php if ( is_single() ) : the_post_thumbnail('full');
+    else : ;
+    endif;?>
+</div>
+<!-- thumbnail-my -->
 </article><!-- #post-## -->

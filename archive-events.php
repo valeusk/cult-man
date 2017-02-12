@@ -19,9 +19,11 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				<div class="page-title">Афиша</div>
+
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
+					/*the_archive_title( '<h1 class="page-title">', '</h1>' );*/
+					/*the_archive_description( '<div class="archive-description">', '</div>' )*/;
 				?>
 			</header><!-- .page-header -->
 
@@ -49,14 +51,25 @@ get_header(); ?>
 		</main><!-- #main -->
 		 </div><!-- row -->
 		</div> <!-- col-lg-8 col-md-8 -->
-		<?php get_sidebar(); ?>
+		<?php
+            //get_sidebar();
+            ?>
+       <div class="col-lg-4 col-md-4">
+                  <div class="row">
+                   <?php if ( is_active_sidebar( 'events-page' ) ) : ?>
+                    <div class="sidebar widget-area">
+                        <?php dynamic_sidebar( 'events-page' ); ?>
+                    </div>
+                <?php endif; ?>
+                </div> <!-- row -->
+            </div> <!-- col-lg-4 col-md-4 -->
 		</div> <!-- container -->
 		<div class="container">
             <div class="col-lg-12">
                 <div class="row">
-                    <div class="pagination-line">
+                    <!--<div class="pagination-line">
                         <?php  the_posts_pagination() /*my_pagenavi()*/; ?>
-                    </div>
+                    </div>-->
                     <!-- pagination-line -->
                 </div>
                 <!-- row -->

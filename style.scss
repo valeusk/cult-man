@@ -254,3 +254,26 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+.entry-header__events-archive {
+    @extend .widget__event;
+    align-items: flex-start;
+    &-wrapper {
+        padding-left: 20px;
+        &-title {
+            text-align: justify;
+            text-transform: uppercase;
+            a {
+                color: #484848;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+        &-place {
+            @extend h4;
+            font-family: $Site__font-regular;
+            //text-transform: uppercase;
+        }
+    }
+}

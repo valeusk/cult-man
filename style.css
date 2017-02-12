@@ -46,7 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /* ------------------Reset CSS
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+h1, h2, h3, h4, .entry-header__events-archive-wrapper-place, h5, h6, p, blockquote, pre, a,
 abbr, acronym, address, big, cite, code, del, dfn, em, font,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup,
 tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
@@ -380,6 +380,7 @@ h1,
 h2,
 h3,
 h4,
+.entry-header__events-archive-wrapper-place,
 h5,
 h6 {
   clear: both;
@@ -406,7 +407,7 @@ h2 {
 h3 {
   font-size: 22px !important; }
 
-h4 {
+h4, .entry-header__events-archive-wrapper-place {
   font-size: 20px !important; }
 
 h5 {
@@ -425,10 +426,10 @@ h6 {
   font-size: 22px; }
 
 .widget__event-meta-time {
-  font-size: 40px; }
+  font-size: 34px; }
 
 .widget__event-meta-date {
-  font-size: 20px; }
+  font-size: 16px; }
 
 .page-title, .widget__event-title {
   font-size: 30px; }
@@ -1283,7 +1284,7 @@ object {
   h3 {
     font-size: 20px !important; }
 
-  h4 {
+  h4, .entry-header__events-archive-wrapper-place {
     font-size: 18px !important; }
 
   h5 {
@@ -1302,10 +1303,10 @@ object {
     font-size: 20px; }
 
   .widget__event-meta-time {
-    font-size: 38px; }
+    font-size: 32px; }
 
   .widget__event-meta-date {
-    font-size: 18px; }
+    font-size: 14px; }
 
   .page-title, .widget__event-title {
     font-size: 28px; }
@@ -1416,7 +1417,7 @@ object {
   h3 {
     font-size: 18px !important; }
 
-  h4 {
+  h4, .entry-header__events-archive-wrapper-place {
     font-size: 16px !important; }
 
   h5 {
@@ -1435,10 +1436,10 @@ object {
     font-size: 18px; }
 
   .widget__event-meta-time {
-    font-size: 36px; }
+    font-size: 30px; }
 
   .widget__event-meta-date {
-    font-size: 16px; }
+    font-size: 12px; }
 
   .page-title, .widget__event-title {
     font-size: 26px; }
@@ -1523,7 +1524,7 @@ object {
   h3 {
     font-size: 17px !important; }
 
-  h4 {
+  h4, .entry-header__events-archive-wrapper-place {
     font-size: 15px !important; }
 
   h5 {
@@ -1542,10 +1543,10 @@ object {
     font-size: 17px; }
 
   .widget__event-meta-time {
-    font-size: 35px; }
+    font-size: 29px; }
 
   .widget__event-meta-date {
-    font-size: 15px; }
+    font-size: 11px; }
 
   .page-title, .widget__event-title {
     font-size: 25px; }
@@ -1630,7 +1631,7 @@ object {
   h3 {
     font-size: 18px !important; }
 
-  h4 {
+  h4, .entry-header__events-archive-wrapper-place {
     font-size: 16px !important; }
 
   h5 {
@@ -1649,10 +1650,10 @@ object {
     font-size: 18px; }
 
   .widget__event-meta-time {
-    font-size: 36px; }
+    font-size: 30px; }
 
   .widget__event-meta-date {
-    font-size: 16px; }
+    font-size: 12px; }
 
   .page-title, .widget__event-title {
     font-size: 26px; }
@@ -1863,7 +1864,7 @@ object {
   -webkit-transition: all 0.8s ease;
           transition: all 0.8s ease; }
 
-.widget__event {
+.widget__event, .entry-header__events-archive {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1897,9 +1898,12 @@ object {
     .widget__event-meta-time a, .widget__event-meta-date a {
       color: #fff; }
     .widget__event-meta-time {
-      font-family: "Exo2Bold"; }
+      border-bottom: 1px solid #fff;
+      font-family: "Exo2Bold";
+      text-align: center; }
     .widget__event-meta-date {
-      font-family: "OpenSansBold"; }
+      font-family: "OpenSansBold";
+      text-align: center; }
     .widget__event-meta a {
       color: #ffffff !important; }
     .widget__event-meta:hover {
@@ -2042,5 +2046,22 @@ object {
 
 .gallery-caption {
   display: block; }
+
+.entry-header__events-archive {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .entry-header__events-archive-wrapper {
+    padding-left: 20px; }
+    .entry-header__events-archive-wrapper-title {
+      text-align: justify;
+      text-transform: uppercase; }
+      .entry-header__events-archive-wrapper-title a {
+        color: #484848; }
+        .entry-header__events-archive-wrapper-title a:hover {
+          color: #000; }
+    .entry-header__events-archive-wrapper-place {
+      font-family: "OpenSansRegular"; }
 
 /*# sourceMappingURL=style.css.map */
