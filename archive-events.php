@@ -19,7 +19,7 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<div class="page-title">Афиша</div>
+				<div class="event-page-title">Афиша</div>
 
 				<?php
 					/*the_archive_title( '<h1 class="page-title">', '</h1>' );*/

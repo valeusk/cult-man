@@ -2,12 +2,10 @@
 sidebar
 ----------------------------------------------*/
 
-h2.widget-title {
-    font-size: 28px;
-    font-family: $title-font, sans-serif;
-    color: $title-color;
-    border-bottom: 1px solid $title-color;
-    padding-bottom: 8px;
+.widget-title {
+        @extend .page-title;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
 }
 
 .widget-area {
@@ -63,3 +61,4 @@ footer sidebar
       text-align: left;
     }
 }
+

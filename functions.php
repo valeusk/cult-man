@@ -98,8 +98,8 @@ function cult_man_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'cult-man' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<span class="widget-title">',
+		'after_title'   => '</span>',
 	) );
 
         register_sidebar(
@@ -155,10 +155,10 @@ function cult_man_widgets_init() {
 			'id' => 'events-page', // уникальный id для сайта, назначается правому сайдбару
 			'name' => 'Страница анонсов', // название сайдбара, которое будет отображаться в админке
 			'description' => 'Перетяните виджеты, чтобы добавить их в сайдбар.', // описание выводимое в админке для сайдбара
-			'before_widget' => '<div class="f-sidebar ">', // по умолчанию виджеты выводятся <li>-списком
+			'before_widget' => '<div class="widget-area  ">', // по умолчанию виджеты выводятся <li>-списком
 			'after_widget' => '</div>', // в этой и предыдущей строке мы задали контейнер в котором будет размещен сайдбар
-			'before_title' => '<h3 class="f-wtitle">', // если оставить пустым, будет выводиться в <h2>
-			'after_title' => '</h3>'
+			'before_title' => '<span class="widget-title">', // если оставить пустым, будет выводиться в <h2>
+			'after_title' => '</span>'
 		)
 	);
 }
@@ -243,7 +243,8 @@ class eventsWidget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		$title = apply_filters( 'widget_title', $instance['title'] ); // к заголовку применяем фильтр (необязательно)
-		$posts_per_page = $instance['posts_per_page'];
+		//$posts_per_page = $instance['posts_per_page'];
+		$posts_per_page = 15;
 
 		echo $args['before_widget'];
 
