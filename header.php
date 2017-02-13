@@ -58,7 +58,7 @@
 </div><!-- .site-branding -->
 
 <div class="owl-carousel">
-      <?php $args = array( 'posts_per_page' => 10, 'post_type' => 'events');
+      <?php $args = array( 'posts_per_page' => 10, 'post_type' => 'any', 'tag' => 'Топ');
     $lastposts = get_posts( $args );
     foreach( $lastposts as $post ){ setup_postdata($post);?>
 

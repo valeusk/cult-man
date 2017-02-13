@@ -24,7 +24,7 @@ register_post_type( 'events',
                     'post-formats',
                     'custom-fields'
                 ),
-               'taxonomies' => array('category') //добавляем к записям необходимый набор таксономий
+               'taxonomies' => array('category', 'post_tag') //добавляем к записям необходимый набор таксономий
            ));
 }
 
