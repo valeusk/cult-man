@@ -257,9 +257,11 @@ object {
 
 .entry-header__events-archive {
     @extend .widget__event;
-    align-items: flex-start;
     &-wrapper {
         padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         &-title {
             text-align: justify;
             text-transform: uppercase;
@@ -273,7 +275,8 @@ object {
         &-place {
             @extend h4;
             font-family: $Site__font-regular;
-            //text-transform: uppercase;
+            margin-bottom: 0px;
         }
     }
 }
+

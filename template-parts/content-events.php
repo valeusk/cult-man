@@ -36,9 +36,9 @@
     <div class="entry-header__events-archive-wrapper">
         <div class="entry-header__events-archive-wrapper-title">
         <? if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title-event">', '</h1>' );
 		else :
-			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h3 class="entry-title-event"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif; ?>
     </div>
         <div class="entry-header__events-archive-wrapper-place">

@@ -1,10 +1,12 @@
 .widget__event {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     &-meta {
         display: flex;
         flex-direction: column;
+        align-content: center;
+        align-items: center;
         border-radius: 3px;
         justify-content: space-around;
         background: $widget__event-meta-background;
@@ -19,11 +21,17 @@
             border-bottom: 1px solid #fff;
             font-family: $site__title-font;
             text-align: center;
-        }
+            flex-grow: 3;
+            display: flex;
+            align-items: center;
+                }
         &-date {
             //font-size: 20px;
             font-family: $title-font;
             text-align: center;
+            flex-grow: 2;
+            display: flex;
+            align-items: center;
         }
         a {
             color: $widget__event-meta-text-color!important;
@@ -38,15 +46,11 @@
     }
     &-event-title {
         text-align: justify;
-        padding: 10px;
+        padding: 0px 10px;
         font-family: $widget__event-event-title-font;
         text-transform: uppercase;
-        //font-size: $widget__event-event-title-font-size;
     }
     &-title {
-        @extend .page-title;
-        display: block;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+        @extend .widget-title;
     }
 }
