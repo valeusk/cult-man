@@ -279,13 +279,23 @@ class eventsWidget extends WP_Widget {
                         echo ('&nbsp;'.(get_post_meta(get_the_ID(), 'Дата', true)).'&nbsp;');}?>
                         </a>
     </div>
-    </div>
-    <div class="widget__event-event-title">
+    </div> <!-- widget__event-meta -->
+    <div class="widget__event-entry">
+       <div class="widget__event-entry-title">
         <a href="<?php the_permalink(); ?>">
             <?php the_title() ?>
         </a>
     </div>
+       <span class="widget__event-entry-place">
+                        <?php
+                        $place = get_post_meta(get_the_ID(), 'Место', true);
+                        if (empty ($place)) {
+                        echo (''); }
+                        else {
+                        echo ('<i class="fa fa-map-o" aria-hidden="true"></i>'.' '.(get_post_meta(get_the_ID(), 'Место', true)));}?>
+    </span>
     </div>
+    </div> <!-- widget__event -->
 </li>
 
 

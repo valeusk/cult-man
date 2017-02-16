@@ -1943,11 +1943,30 @@ object {
       background: #fff; }
       .widget__event-meta:hover a {
         color: #3934b5 !important; }
-  .widget__event-event-title {
-    text-align: justify;
-    padding: 0px 10px;
-    font-family: "OpenSansBold";
-    text-transform: uppercase; }
+  .widget__event-entry {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 10px; }
+    .widget__event-entry-title {
+      text-align: justify;
+      font-family: "OpenSansBold";
+      text-transform: uppercase; }
+    .widget__event-entry-place {
+      display: block;
+      -webkit-align-content: justify;
+          -ms-flex-line-pack: justify;
+              align-content: justify; }
 
 /*--------------------------------------------------------------
 # Content
@@ -2099,4 +2118,5 @@ object {
   .entry-header__events-archive-wrapper-place {
     font-family: "OpenSansRegular";
     margin-bottom: 0px; }
+
 /*# sourceMappingURL=style.css.map */

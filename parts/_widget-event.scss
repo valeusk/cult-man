@@ -24,7 +24,7 @@
             flex-grow: 3;
             display: flex;
             align-items: center;
-                }
+        }
         &-date {
             //font-size: 20px;
             font-family: $title-font;
@@ -44,11 +44,26 @@
             }
         }
     }
-    &-event-title {
-        text-align: justify;
+    &-entry {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 0px 10px;
-        font-family: $widget__event-event-title-font;
-        text-transform: uppercase;
+        &-title {
+            text-align: justify;
+            //padding: 0px 10px;
+            font-family: $widget__event-event-title-font;
+            text-transform: uppercase;
+        }
+        &-place {
+            display: block;
+            align-content: justify;
+
+
+            //margin-bottom: 0px;
+            //font-family: $widget__event-event-title-font;
+            //text-transform: uppercase;
+        }
     }
     &-title {
         @extend .widget-title;
