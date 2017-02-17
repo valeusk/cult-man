@@ -1952,7 +1952,7 @@ object {
             justify-content: space-between;
     padding: 0px 10px; }
     .widget__event-entry-title {
-      text-align: justify;
+      text-align: left;
       font-family: "OpenSansBold";
       text-transform: uppercase; }
     .widget__event-entry-place {

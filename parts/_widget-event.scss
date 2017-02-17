@@ -50,7 +50,7 @@
         justify-content: space-between;
         padding: 0px 10px;
         &-title {
-            text-align: justify;
+            text-align: left;
             //padding: 0px 10px;
             font-family: $widget__event-event-title-font;
             text-transform: uppercase;
@@ -58,11 +58,6 @@
         &-place {
             display: block;
             align-content: justify;
-
-
-            //margin-bottom: 0px;
-            //font-family: $widget__event-event-title-font;
-            //text-transform: uppercase;
         }
     }
     &-title {
