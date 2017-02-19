@@ -173,6 +173,9 @@ function cult_man_scripts() {
 
     wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/libs/owlcarousel/assets/owl.carousel.min.css');
 
+    wp_enqueue_style( 'animate', get_template_directory_uri().'/libs/animate/animate.min.css');
+
+
     wp_enqueue_style( 'owl-look', get_template_directory_uri().'/libs/owlcarousel/assets/owl.theme.default.min.css');
 
     wp_register_style( 'fontawesome', get_template_directory_uri().'/libs/font-awesome/css/font-awesome.min.css' );
