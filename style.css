@@ -1729,7 +1729,10 @@ object {
 
   .owl-prev,
   .owl-next {
-    border: none !important; } }
+    border: none !important; }
+
+  .slider__item-entry {
+    margin-top: 220px !important; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
