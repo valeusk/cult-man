@@ -1024,6 +1024,11 @@ footer
 /*--------------------------------------------------------------
 # content
 --------------------------------------------------------------*/
+.entry-content ul {
+  list-style: square;
+  margin-left: 30px;
+  padding: 10px; }
+
 .entry-meta span {
   /*color: $title-color;*/
   font-size: 13px; }
@@ -1032,7 +1037,8 @@ footer
   margin-bottom: 10px; }
 
 .thumbnail-my {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-top: 10px; }
   .thumbnail-my img {
     width: 100%;
     height: auto; }
@@ -1961,12 +1967,6 @@ object {
           -ms-flex-line-pack: justify;
               align-content: justify; }
 
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
 .entry-header__events-archive-wrapper {
   padding-left: 20px;
   display: -webkit-box;
@@ -1992,5 +1992,59 @@ object {
   .entry-header__events-archive-wrapper-place {
     font-family: "OpenSansRegular";
     margin-bottom: 0px; }
+
+.entity {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .entity__item {
+    width: 250px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 10px;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    background: #b7b9e0; }
+    .entity__item-img img {
+      border-radius: 50%;
+      display: block;
+      border: 3px solid #000;
+      width: 200px !important;
+      height: auto; }
+    .entity__item-description {
+      font-family: "OpenSansBold";
+      text-align: center;
+      padding: 10px 0px;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,13 @@
 .content-area {
 }
 
+.entry-content ul {
+    list-style: square;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+
 .entry-meta span {
     /*color: $title-color;*/
     font-size: 13px;
@@ -16,6 +23,7 @@
 
 .thumbnail-my {
     margin-bottom: 10px;
+    margin-top: 10px;
     img {
         width: 100%;
         height: auto;
