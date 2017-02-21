@@ -169,7 +169,7 @@ add_action( 'widgets_init', 'cult_man_widgets_init' );
  */
 function cult_man_scripts() {
 
-    wp_enqueue_style( 'cult-man-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'cult-man-style', get_stylesheet_uri() .'?123');
 
     wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/libs/owlcarousel/assets/owl.carousel.min.css');
 
