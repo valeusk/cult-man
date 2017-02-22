@@ -1865,7 +1865,13 @@ object {
   padding-bottom: 4px;
   border-radius: 50%;
   color: #fff;
-  font-size: 30px !important; }
+  font-size: 30px !important;
+  -webkit-animation: bounceIn;
+          animation: bounceIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
 
 .button-proto, .slider__item-entry-meta-date p, .slider__item-entry-meta-time p, .owl-nav-proto, .owl-prev, .owl-next, #downclick {
   border: 2px solid #fff;

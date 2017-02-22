@@ -92,6 +92,9 @@
     border-radius: 50%;
     color: #fff;
     font-size: 30px!important;
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-delay: 2s;
     @extend .button-proto;
 }
 
