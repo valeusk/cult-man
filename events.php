@@ -39,7 +39,7 @@ function include_template_function( $template_path ) {
             if ( $theme_file = locate_template( array ( 'single-events.php' ) ) ) {
                 $template_path = $theme_file;
             } else {
-                $template_path = plugin_dir_path( __FILE__ ) . '/single-events.php';
+                $template_path = plugin_dir_path( __FILE__ ) . 'archive-events.php';
             }
         }
     }

@@ -44,7 +44,7 @@ get_header(); ?>
 
 		else :
 
-			get_template_part( 'template-parts/content-events', 'none' );
+			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
 
