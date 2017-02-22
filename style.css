@@ -531,7 +531,7 @@ ins {
 big {
   font-size: 125%; }
 
-.text__shadow-dark, .contur-txt-dark {
+.text__shadow-dark, .contur-txt-dark, #downclick {
   text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000; }
 
 .cat-links a {
@@ -1868,10 +1868,10 @@ object {
   font-size: 30px !important;
   -webkit-animation: bounceIn;
           animation: bounceIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s; }
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s; }
 
 .button-proto, .slider__item-entry-meta-date p, .slider__item-entry-meta-time p, .owl-nav-proto, .owl-prev, .owl-next, #downclick {
   border: 2px solid #fff;
