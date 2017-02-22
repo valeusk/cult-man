@@ -5,6 +5,9 @@
     height: 700px;
     width: auto;
     &-entry {
+    animation: zoomIn;
+    //animation: fadeInRight;
+    animation-duration: 1.3s;
         margin-top: 200px;
         display: flex;
         flex-direction: column;
