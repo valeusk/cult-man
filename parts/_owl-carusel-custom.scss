@@ -5,15 +5,14 @@
     height: 700px;
     width: auto;
     &-entry {
-    animation: zoomIn;
-    //animation: fadeInRight;
-    animation-duration: 1.3s;
         margin-top: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100%;
+        animation: zoomIn;
+        animation-duration: 1.1s;
         &-title {
             padding:0 40px;
             text-align: center;
@@ -59,6 +58,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: zoomIn;
+    animation-duration: 1.3s;
+    //animation-delay: 1.1s;
     @extend .button-proto;
     i {
         padding: 5px;
@@ -92,9 +94,7 @@
     border-radius: 50%;
     color: #fff;
     font-size: 30px!important;
-    animation: bounceIn;
     animation-duration: 1.1s;
-    animation-delay: 1.9s;
     @extend .button-proto;
     @extend .text__shadow-dark;
 }

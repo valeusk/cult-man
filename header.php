@@ -18,7 +18,24 @@
 function logo_animate(){
     var lgtarget = document.getElementById("logo-target");
     lgtarget.classList.add( "animated", "zoomOut" );
+    var navtarget = document.querySelector(".owl-nav");
+    navtarget.classList.add( "animated", "zoomOut" );
+//    var itemtarget = document.querySelector(".slider__item-entry");
+//    itemtarget.classList.add( "animated", "zoomOut" );
+    var lgtarget = document.getElementById("downclick");
+    lgtarget.classList.remove("animated", "bounceIn", "zoomIn");
+    lgtarget.classList.add( "animated", "zoomOut" );
 };
+function dbtnanimate (){
+    var lgtarget = document.getElementById("downclick");
+    lgtarget.classList.remove("animated", "zoomIn");
+    lgtarget.classList.add( "animated", "bounceIn" );
+
+//    var itemtarget = document.querySelector(".slider__item-entry");
+//    itemtarget.classList.remove("animated", "zoomIn");
+   //itemtarget.classList.add( "animated", "zoomIn" );
+}
+window.onload = dbtnanimate;
 window.onbeforeunload = logo_animate ;
 </script>
 <!-- Bootstrap v3.3.1 Grid Styles -->
@@ -42,7 +59,7 @@ window.onbeforeunload = logo_animate ;
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 		<!-- #site-navigation -->
-		<div id="logo-target" class="site-branding" style="">
+		<div id="logo-target" class="site-branding animated zoomIn" style="">
 
 			<div class="logo-wrapper" onclick="logo_animate()">
 			<?php echo get_custom_logo(); ?>
@@ -110,7 +127,7 @@ window.onbeforeunload = logo_animate ;
      wp_reset_postdata(); ?>
 </div> <!-- carousel -->
             </header><!-- #masthead -->
-<button id="downclick"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+<button id="downclick" class="animated zoomIn"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
 <script>
   downclick.addEventListener('click', function () {
     animatedScrollTo(
@@ -122,6 +139,8 @@ window.onbeforeunload = logo_animate ;
         }
     );
 });
+//  function slider_entry_animate() { var itemtarget = document.querySelector(".slider__item-entry"); itemtarget.classList.add( "animated", "zoomOut" ); }; window.onbeforeunload = slider_entry_animate ;
+
 </script>
 </button>
 	<div id="content" class="site-content">

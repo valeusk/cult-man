@@ -293,8 +293,8 @@ img.custom-logo {
   border-bottom: 1px solid #fff;
   -webkit-animation: zoomIn;
           animation: zoomIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s; }
   .site-title a {
     font-size: 30px; }
 
@@ -311,11 +311,7 @@ img.custom-logo {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  display: block;
-  -webkit-animation: zoomIn;
-          animation: zoomIn;
-  -webkit-animation-duration: 1.1s;
-          animation-duration: 1.1s; }
+  display: block; }
   .site-description p {
     margin-bottom: none; }
 
@@ -370,11 +366,7 @@ img.custom-logo {
 LOGO
 ------------------------------------------*/
 .custom-logo {
-  margin: 10px;
-  -webkit-animation: zoomIn;
-          animation: zoomIn;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s; }
+  margin: 10px; }
 
 /*--------------------------------------------------------------
 # typography
@@ -1772,10 +1764,6 @@ object {
   height: 700px;
   width: auto; }
   .slider__item-entry {
-    -webkit-animation: zoomIn;
-            animation: zoomIn;
-    -webkit-animation-duration: 1.3s;
-            animation-duration: 1.3s;
     margin-top: 200px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1794,7 +1782,11 @@ object {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%; }
+    height: 100%;
+    -webkit-animation: zoomIn;
+            animation: zoomIn;
+    -webkit-animation-duration: 1.1s;
+            animation-duration: 1.1s; }
     .slider__item-entry-title {
       padding: 0 40px;
       text-align: center; }
@@ -1839,7 +1831,11 @@ object {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s; }
   .owl-nav-proto i, .owl-prev i, .owl-next i {
     padding: 5px; }
 
@@ -1866,12 +1862,8 @@ object {
   border-radius: 50%;
   color: #fff;
   font-size: 30px !important;
-  -webkit-animation: bounceIn;
-          animation: bounceIn;
   -webkit-animation-duration: 1.1s;
-          animation-duration: 1.1s;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s; }
+          animation-duration: 1.1s; }
 
 .button-proto, .slider__item-entry-meta-date p, .slider__item-entry-meta-time p, .owl-nav-proto, .owl-prev, .owl-next, #downclick {
   border: 2px solid #fff;
@@ -2071,5 +2063,4 @@ object {
       text-align: center;
       padding: 10px 0px;
       text-transform: uppercase; }
-
 /*# sourceMappingURL=style.css.map */
