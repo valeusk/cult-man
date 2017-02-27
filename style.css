@@ -43,6 +43,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+.palette-menu-current-item, .current-menu-item {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1e09+0,ec1400+34,d01100+100 */
+  background: #ff1e09;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff1e09 0%, #ec1400 34%, #d01100 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff1e09 0%, #ec1400 34%, #d01100 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1e09', endColorstr='#d01100',GradientType=0 )
+  /* IE6-9 */ }
+
 /* ------------------Reset CSS
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
@@ -523,7 +535,7 @@ ins {
 big {
   font-size: 125%; }
 
-.text__shadow-dark, .contur-txt-dark, #downclick {
+.text__shadow-dark, .contur-txt-dark, .menu-item, #downclick {
   text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000, 0 0 15px #000; }
 
 .cat-links a {
@@ -693,7 +705,8 @@ a:active {
     background: #fff;
     padding: 5px 10px;
     -webkit-transition: background 0.5s ease;
-            transition: background 0.5s ease; }
+            transition: background 0.5s ease;
+    text-shadow: none; }
     .menu-item:hover a {
       color: #5b5b5b; }
 
