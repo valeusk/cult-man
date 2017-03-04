@@ -180,9 +180,11 @@ function cult_man_scripts() {
 //    wp_register_style( 'fontawesome', get_template_directory_uri().'/libs/font-awesome/css/font-awesome.min.css' );
 //    wp_enqueue_style ('fontawesome');
 
-    wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/libs/owlcarousel/owl.carousel.min.js', array('jquery'), '20151215', true );
+    wp_enqueue_script( 'libs-min-js', get_template_directory_uri() . '/js/libs.min.js', array('jquery'), '20151215', true );
 
-    wp_enqueue_script( 'my-carousel', get_template_directory_uri() . '/js/my-carousel.js', array('jquery'), '20151215', true );
+//    wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/libs/owlcarousel/owl.carousel.min.js', array('jquery'), '20151215', true );
+
+//    wp_enqueue_script( 'my-carousel', get_template_directory_uri() . '/js/my-carousel.js', array('jquery'), '20151215', true );
 
     wp_enqueue_script( 'animated-scrollto', get_template_directory_uri() . '/js/animatedScrollTo.js', array('jquery'), '20151215', true );
 
