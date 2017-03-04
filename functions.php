@@ -171,6 +171,8 @@ function cult_man_scripts() {
 
     wp_enqueue_style( 'cult-man-style', get_stylesheet_uri().'?'.time());
 
+    wp_enqueue_script( 'all-min-js', get_template_directory_uri() . '/all.min.js', array('jquery'), '20151215', true );
+
 //    wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/libs/owlcarousel/assets/owl.carousel.min.css');
 //
 //wp_enqueue_style( 'animate', get_template_directory_uri().'/libs/animate/animate.min.css');
@@ -180,20 +182,21 @@ function cult_man_scripts() {
 //    wp_register_style( 'fontawesome', get_template_directory_uri().'/libs/font-awesome/css/font-awesome.min.css' );
 //    wp_enqueue_style ('fontawesome');
 
-    wp_enqueue_script( 'libs-min-js', get_template_directory_uri() . '/js/libs.min.js', array('jquery'), '20151215', true );
+
+
 
 //    wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/libs/owlcarousel/owl.carousel.min.js', array('jquery'), '20151215', true );
 
 //    wp_enqueue_script( 'my-carousel', get_template_directory_uri() . '/js/my-carousel.js', array('jquery'), '20151215', true );
 
-    wp_enqueue_script( 'animated-scrollto', get_template_directory_uri() . '/js/animatedScrollTo.js', array('jquery'), '20151215', true );
+//    wp_enqueue_script( 'animated-scrollto', get_template_directory_uri() . '/js/animatedScrollTo.js', array('jquery'), '20151215', true );
 
-    wp_enqueue_script('my_topbutton', get_template_directory_uri() .
- 		'/js/my_topbutton.js');
+//    wp_enqueue_script('my_topbutton', get_template_directory_uri() .
+// 		'/js/my_topbutton.js');
 
-    wp_enqueue_script( 'cult-man-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+//    wp_enqueue_script( 'cult-man-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'cult-man-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+//	wp_enqueue_script( 'cult-man-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

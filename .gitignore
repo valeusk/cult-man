@@ -53,3 +53,7 @@ Temporary Items
 /.gitattributes
 /.jshintignore
 /.jscsrc
+/theme-style.css
+/style.css
+/maps/theme-style.css.map
+/maps/
