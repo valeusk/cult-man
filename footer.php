@@ -85,6 +85,35 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+function reload_animate(){
+    var brandtarget = document.getElementById("brand-target");
+    brandtarget.classList.add( "animated", "zoomOut" );
 
+    var navtarget = document.querySelector(".owl-nav");
+    navtarget.classList.add( "animated", "zoomOut" );
+
+    var dclcktarget = document.getElementById("downclick");
+    dclcktarget.classList.remove("animated", "bounceIn", "zoomIn");
+    dclcktarget.classList.add( "animated", "zoomOut" );
+    console.log("анимация перезагрузки");
+};
+
+function logo_animate() {
+    var logotarget = document.querySelector(".logo-wrapper");
+    //logotarget.classList.remove("animated", "bounceIn", "zoomIn");
+    console.log("анимация логотипа");
+    logotarget.classList.add( "animated", "rollOut" );
+}
+
+function dbtnanimate (){
+    var dclcktarget = document.getElementById("downclick");
+    dclcktarget.classList.remove("animated", "zoomIn");
+    dclcktarget.classList.add( "animated", "bounceIn" );
+}
+
+window.onload = dbtnanimate;
+window.onbeforeunload = reload_animate ;
+</script>
 </body>
 </html>

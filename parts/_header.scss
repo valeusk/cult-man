@@ -8,24 +8,6 @@ img.custom-logo {
     margin-top: 20px;
 }
 
-.headgrad {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+37,7c78ce+100&1+55,0.83+81,0+100 */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 16%, rgba(239,241,249,1) 37%, rgba(206,206,237,1) 55%, rgba(159,156,219,0.83) 81%, rgba(124,120,206,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 16%,rgba(239,241,249,1) 37%,rgba(206,206,237,1) 55%,rgba(159,156,219,0.83) 81%,rgba(124,120,206,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 16%,rgba(239,241,249,1) 37%,rgba(206,206,237,1) 55%,rgba(159,156,219,0.83) 81%,rgba(124,120,206,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007c78ce',GradientType=0 ); /* IE6-9 */
-
-}
-
-.headgrad0 {
- /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+16,eff1f9+54,7c78ce+91,6e2be9+97,6e2be9+100&1+40,0.83+76,0+100 */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 16%, rgba(245,246,251,1) 40%, rgba(239,241,249,0.93) 54%, rgba(171,169,223,0.83) 76%, rgba(124,120,206,0.31) 91%, rgba(110,43,233,0.1) 97%, rgba(110,43,233,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 16%,rgba(245,246,251,1) 40%,rgba(239,241,249,0.93) 54%,rgba(171,169,223,0.83) 76%,rgba(124,120,206,0.31) 91%,rgba(110,43,233,0.1) 97%,rgba(110,43,233,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 16%,rgba(245,246,251,1) 40%,rgba(239,241,249,0.93) 54%,rgba(171,169,223,0.83) 76%,rgba(124,120,206,0.31) 91%,rgba(110,43,233,0.1) 97%,rgba(110,43,233,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006e2be9',GradientType=0 ); /* IE6-9 */
-
-}
-
 .site-title  {
     font-family: $site__title-font;
     text-transform: uppercase;
