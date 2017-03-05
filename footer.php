@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-	 <div class="container">
+	<footer id="colophon" class="site-footer " role="contentinfo">
+	 <div class="container wow slideInLeft data-wow-offset="150" ">
               <div class="row">
                    <div class="col-lg-4 col-md-4">
                     <div class="cult-man-info">
@@ -115,5 +115,6 @@ function dbtnanimate (){
 window.onload = dbtnanimate;
 window.onbeforeunload = reload_animate ;
 </script>
+<script>new WOW().init();</script>
 </body>
 </html>
