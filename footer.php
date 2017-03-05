@@ -108,8 +108,8 @@ function logo_animate() {
 
 function dbtnanimate (){
     var dclcktarget = document.getElementById("downclick");
-    dclcktarget.classList.remove("animated", "zoomIn");
-    dclcktarget.classList.add( "animated", "bounceIn" );
+    dclcktarget.classList.remove("bounceInDown");
+    dclcktarget.classList.add( "bounceIn");
 }
 
 window.onload = dbtnanimate;

@@ -113,7 +113,7 @@
      wp_reset_postdata(); ?>
 </div> <!-- carousel -->
             </header><!-- #masthead -->
-<button id="downclick" class="animated zoomIn"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+<button id="downclick" class="animated bounceInDown"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
 <script>
   downclick.addEventListener('click', function () {
     animatedScrollTo(
