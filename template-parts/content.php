@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="wow zoomIn" ><header class="entry-header">
+	<div class="wow zoomIn data-wow-offset="-100"" ><header class="entry-header">
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
