@@ -51,10 +51,10 @@ get_header(); ?>
 		</div> <!-- col-lg-8 col-md-8 -->
 		<?php get_sidebar(); ?>
 		</div> <!-- container -->
-		<div class="container">
+		<div class="container wow slideInRight">
             <div class="col-lg-12">
                 <div class="row">
-                    <div class="pagination-line">
+                    <div class="pagination-line ">
                         <?php  the_posts_pagination() /*my_pagenavi()*/; ?>
                     </div>
                     <!-- pagination-line -->
